@@ -1,0 +1,292 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+p cite {
+    font-size: 10px;
+    text-align: right;
+    display: block;
+}
+
+#panel a:link {
+    background-color: rgba(187, 239, 253, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #1a1a1a;
+}
+
+#panel a:active {
+    outline-width: 0;
+}
+
+#panel a:hover {
+    background-color: #bbeffd;
+    border-bottom-color: #1a1a1a;
+}
+
+section {
+    line-height: 1.7;
+    font-size: 24px;
+    font-weight: 300;
+    color: #6d6d6d;
+    margin-top: 40px;
+}
+
+section.sub,
+section.sub p {
+    line-height: 1.7;
+    font-size: 20px;
+    font-weight: 300;
+    color: #6d6d6d;
+    margin-top: 40px;
+}
+
+h1 {
+    color: #282c34;
+    margin-bottom: 0;
+    margin-top: 80px;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+    border-bottom: 1px solid #ececec;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 100px;
+    padding-bottom: 10px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 30px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+#menu h3 {
+    font-size: 26px;
+    padding: 20px 20px 0 20px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0px;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+code {
+    background: rgba(255, 229, 100, 0.2);
+    color: #1a1a1a;
+}
+
+.notes {
+    background-color: rgba(255, 229, 100, 0.3);
+    border-left-color: #ffe564;
+    border-left-width: 9px;
+    border-left-style: solid;
+    padding: 20px 45px 20px 26px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.notes p {
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.notes ol {
+    margin: 20px 0 0 20px;
+}
+
+.notes ol li {
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+ul {
+    margin: 20px 0 20px 40px;
+    list-style: initial;
+}
+
+ol {
+    margin: 20px 0 20px 40px;
+}
+
+ol li,
+ul li {
+    margin: 20px 0 0 0;
+    line-height: 1.7;
+}
+
+.notes dl dd {
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    height: 20px;
+    background-color: #ececec;
+    margin: 75px 0 75px 0;
+}
+
+.slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 356px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 0;
+    display: none;
+    background-color: #ececec;
+}
+
+.slideout-menu-left {
+    left: 0;
+}
+
+.slideout-menu-right {
+    right: 0;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    background-color: #fff;
+    /* A background-color is required */
+    min-height: 100vh;
+}
+
+#bookPadding {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    padding: 0 60px 0 60px;
+}
+
+.slideout-open .slideout-panel {
+    margin-right: 356px;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+#menuButton {
+    position: sticky;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#toc {
+    padding: 20px 20px;
+    font-size: 18px;
+}
+
+#toc a:focus,
+#toc a:hover {
+    background-color: #bbeffd;
+    border-bottom-color: #1a1a1a;
+}
+
+#toc a:link,
+#toc a:active,
+#toc a:visited {
+    color: #000;
+}
+
+#toc h6 {
+    margin-left: 10px;
+    margin: 10px 0 0 10px;
+    line-height: 1.8em;
+}
+
+#toc h5 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+p+div.code-toolbar {
+    margin-top: 30px;
+}
+
+.codesandboxlink,
+.codesandboxlinkNotDynamic {
+    font-size: 10px;
+    margin-top: 15px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#panel .codesandboxlink a:link,
+#panel .codesandboxlinkNotDynamic a:link {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    color: #1a1a1a;
+    padding: 0 4px;
+}
+
+#panel .codesandboxlink a:active,
+#panel .codesandboxlinkNotDynamic a:active {
+    outline-width: 0;
+}
+
+#panel .codesandboxlink a:hover,
+#panel .codesandboxlinkNotDynamic a:hover {
+    background-color: #bbeffd;
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+blockquote {
+    font-size: 1.4em;
+    margin: 50px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78c0a8;
+    line-height: 1.6;
+    position: relative;
+    background: #ededed;
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78c0a8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote::after {
+    content: "";
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}

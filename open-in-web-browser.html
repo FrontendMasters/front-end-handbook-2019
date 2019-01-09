@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/prism.css" />
+    <script src="assets/prism.js"></script>
+    <title>Modern JavaScript In The Wild</title>
+  </head>
+
+  <body>
+    <div id="menu"><div id="toc"></div></div>
+
+    <div id="panel">
+      <div id="menuButton">|||</div>
+
+      <div id="bookPadding">
+        <h1>Front-end Developer Handbook 2019</h1>
+
+        <h3 style="margin-top:0px">
+          <a id="Written_by_Cody_Lindleyhttpcodylindleycom_3"></a>Written by
+          <a href="http://codylindley.com/">Cody Lindley</a>
+        </h3>
+        <section>
+          <p>
+            <em
+              >Sponsored by
+              <a href="https://frontendmasters.com/">Frontend Masters</a>,
+              advancing your skills with in-depth, modern front-end engineering
+              courses</em
+            >
+          </p>
+        </section>
+        <hr />
+
+        <h3>Overview:</h3>
+
+        <p>
+          This is a guide that anyone could use to learn about the practice of
+          front-end development. It broadly outlines and discusses the practice
+          of front-end engineering: how to learn it and what tools are used when
+          practicing it in 2019.
+        </p>
+        <p>
+          It is specifically written with the intention of being a professional
+          resource for potential and currently practicing front-end developers
+          to equip themselves with learning materials and development tools.
+          Secondarily, it can be used by managers, CTOs, instructors, and head
+          hunters to gain insights into the practice of front-end development.
+        </p>
+        <p>
+          The content of the handbook favors web technologies (HTML, CSS, DOM,
+          and JavaScript) and those solutions that are directly built on top of
+          these open technologies. The materials referenced and discussed in the
+          book are either best in class or the current offering to a problem.
+        </p>
+        <p>
+          The book should not be considered a comprehensive outline of all
+          resources available to a front-end developer. The value of the book is
+          tied up in a terse, focused, and timely curation of just enough
+          categorical information so as not to overwhelm anyone on any one
+          particular subject matter.
+        </p>
+        <p>The intention is to release an update to the content yearly.</p>
+        <hr />
+        <p><strong>How To Read This Handbook</strong>:</p>
+        <p>[CONTENT NEEDED]</p>
+        <hr />
+        <p>
+          <strong>Contribute content, suggestions, and fixes on github</strong>:
+        </p>
+        <ul>
+          <li><a href="[ADD LINK]">[ADD LINK]</a></li>
+        </ul>
+
+        <hr />
+
+        <div id="chapter1" class="chapter">
+          <h2>Chapter 1. What Is a Front-end Developer?</h2>
+
+          <blockquote>
+            <p>
+              Front-end web development, also known as client-side development
+              is the practice of producing HTML, CSS and JavaScript for a
+              website or Web Application so that a user can see and interact
+              with them directly. The challenge associated with front end
+              development is that the tools and techniques used to create the
+              front end of a website change constantly and so the developer
+              needs to constantly be aware of how the field is developing.
+            </p>
+            <p>
+              The objective of designing a site is to ensure that when the users
+              open up the site they see the information in a format that is easy
+              to read and relevant. This is further complicated by the fact that
+              users now use a large variety of devices with varying screen sizes
+              and resolutions thus forcing the designer to take into
+              consideration these aspects when designing the site. They need to
+              ensure that their site comes up correctly in different browsers
+              (cross-browser), different operating systems (cross-platform) and
+              different devices (cross-device), which requires careful planning
+              on the side of the developer.
+            </p>
+            <p>
+              <cite
+                ><a
+                  href="https://en.wikipedia.org/wiki/Front-end_web_development"
+                  target="_blank"
+                  >https://en.wikipedia.org/wiki/Front-end_web_development</a
+                ></cite
+              >
+            </p>
+          </blockquote>
+
+          <h4 id="html-css--javascript">A Front-end Developer...</h4>
+          <p>
+            A front-end developer architects and develops websites and web
+            applications using web technologies (i.e.,
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              >HTML</a
+            >,
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              >CSS</a
+            >,
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+              target="_blank"
+              >DOM</a
+            >, and
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              >JavaScript</a
+            >), which run on the
+            <a
+              href="https://en.wikipedia.org/wiki/Open_Web_Platform"
+              target="_blank"
+              >Open Web Platform</a
+            >
+            or act as compilation input for non-web platform environments (i.e.,
+            <a href="https://facebook.github.io/react-native/" target="_blank"
+              >React Native</a
+            >).
+          </p>
+          <p>
+            <img
+              src="./assets/images/what-is-front-end-dev.png"
+              alt=""
+              title="https://www.upwork.com/hiring/development/front-end-developer/"
+            />
+            <cite
+              >Image source:
+              <a
+                href="https://www.upwork.com/hiring/development/front-end-developer/"
+                target="_blank"
+                >https://www.upwork.com/hiring/development/front-end-developer/</a
+              ></cite
+            >
+          </p>
+
+          <p>
+            Typically, a person enters into the field of front-end development
+            by building a website/application which relies on HTML, CSS, and
+            JavaScript and commonly runs in a
+            <a href="https://en.wikipedia.org/wiki/Web_browser" target="_blank"
+              >web browser</a
+            >
+            but can also run in a
+            <a
+              href="https://en.wikipedia.org/wiki/Headless_browser"
+              target="_blank"
+              >headless browser</a
+            >,
+            <a
+              href="http://developer.telerik.com/featured/what-is-a-webview/"
+              target="_blank"
+              >WebView</a
+            >, or as compilation input for a native runtime environment. These
+            four run times scenarios are explained below.
+          </p>
+          <p><strong>Web Browsers (most common)</strong></p>
+          <p>
+            A web browser is software used to retrieve, present, and traverse
+            information on the
+            <a
+              href="https://en.wikipedia.org/wiki/World_Wide_Web"
+              target="_blank"
+              >WWW</a
+            >. Typically, browsers run on a desktop or laptop computer, tablet,
+            or phone, but as of late a browser can be found on just about
+            anything (i.e, on a fridge, in cars, etc.).
+          </p>
+          <p>
+            The most common web browsers are (shown in order of
+            <a
+              href="https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_tables"
+              target="_blank"
+              >most used first</a
+            >):
+          </p>
+          <ul>
+            <li>
+              <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>
+            </li>
+            <li>
+              <a href="http://www.apple.com/safari/" target="_blank">Safari</a>
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Internet_Explorer"
+                target="_blank"
+                >Internet Explorer</a
+              >
+              (Note: not
+              <a href="http://dev.modern.ie/" target="_blank">Edge</a>,
+              referring to IE 9 to IE 11)
+            </li>
+            <li>
+              <a href="https://www.mozilla.org/firefox/" target="_blank"
+                >Firefox</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.microsoft.com/en-us/windows/microsoft-edge"
+                target="_blank"
+                >Edge</a
+              >
+            </li>
+          </ul>
+          <p><strong>Headless Browsers</strong></p>
+          <p>
+            Headless browsers are a web browser <strong>without</strong> a
+            graphical user interface that can be controlled from a command line
+            interface programmatically for the purpose of web page automation
+            (e.g., functional testing, scraping, unit testing, etc.). Think of
+            headless browsers as a browser that you can run from the command
+            line that can retrieve and traverse web pages.
+          </p>
+          <p>The most common headless browsers are:</p>
+          <ul>
+            <li>
+              <a
+                href="https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md"
+                target="_blank"
+                >Headless Chromium</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/assaf/zombie" target="_blank"
+                >Zombie</a
+              >
+            </li>
+            <li><a href="http://slimerjs.org/" target="_blank">slimerjs</a></li>
+          </ul>
+          <p><strong>Webviews</strong></p>
+          <p>
+            <a
+              href="http://developer.telerik.com/featured/what-is-a-webview/"
+              target="_blank"
+              >Webviews</a
+            >
+            are used by a native OS, in a native application, to run web pages.
+            Think of a
+            <a
+              href="http://developer.telerik.com/featured/what-is-a-webview/"
+              target="_blank"
+              >webview</a
+            >
+            like an iframe or a single tab from a web browser that is embedded
+            in a native application running on a device (e.g.,
+            <a
+              href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIWebView_Class/"
+              target="_blank"
+              >iOS</a
+            >,
+            <a
+              href="http://developer.android.com/reference/android/webkit/WebView.html"
+              target="_blank"
+              >android</a
+            >,
+            <a
+              href="https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx"
+              target="_blank"
+              >windows</a
+            >).
+          </p>
+          <p>
+            The most common solutions for
+            <a
+              href="http://developer.telerik.com/featured/what-is-a-webview/"
+              target="_blank"
+              >webview</a
+            >
+            development are:
+          </p>
+          <ul>
+            <li>
+              <a href="https://cordova.apache.org/" target="_blank">Cordova</a>
+              (typically for native phone/tablet apps)
+            </li>
+            <li>
+              <a href="https://github.com/nwjs/nw.js" target="_blank">NW.js</a>
+              (typically used for desktop apps)
+            </li>
+            <li>
+              <a href="http://electron.atom.io/" target="_blank">Electron</a>
+              (typically used for desktop apps)
+            </li>
+          </ul>
+          <p><strong>Native from Web Tech</strong></p>
+          <p>
+            Eventually, what is learned from web browser development can be used
+            by front-end developers to craft code for environments that are not
+            fueled by a browser engine. As of late, development environments are
+            being dreamed up that use web technologies (e.g., CSS and
+            JavaScript), without web engines, to create native applications.
+          </p>
+          <p>Some examples of these environments are:</p>
+          <ul>
+            <li><a href="https://flutter.io/" target="_blank">Flutter</a></li>
+            <li>
+              <a href="https://facebook.github.io/react-native/" target="_blank"
+                >React Native</a
+              >
+            </li>
+          </ul>
+
+          <div class="notes">
+            <p><strong>Notes:</strong></p>
+            <ol>
+              <li>
+                Make sure you are clear what exactly is meant by the "web
+                platform". Read,
+                <a
+                  href="http://tess.oconnor.cx/2009/05/what-the-web-platform-is"
+                  target="_blank"
+                  >"The Web platform: what it is"</a
+                >
+                and read the,
+                <a
+                  href="https://en.wikipedia.org/wiki/Open_Web_Platform"
+                  target="_blank"
+                  >"Open Web Platform"</a
+                >
+                Wikipedia page. Explore
+                <a href="https://platform.html5.org/" target="_blank"
+                  >the many technologies</a
+                >
+                that make up the web platform.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="chapter2" class="chapter">
+          <h2>Chapter 2. The Practice of Front-end Development</h2>
+
+          <section class="sub">
+            <p>
+              This chapter will break down and broadly describes the practice of
+              front-end engineering.
+            </p>
+          </section>
+
+          <h3>1.1 - Front-End Jobs Titles</h3>
+
+          <p>
+            Below is a list and description of various front-end job titles. The
+            common, or most used (i.e., generic), title for a front-end
+            developer is, "front-end developer" or "front-end engineer". Note
+            that any job that contains the word "front-end", "client-side", "web
+            UI", "HTML", "CSS", or "JavaScript" typically infers that a person
+            has some degree of HTML, CSS, DOM, and JavaScript professional know
+            how.
+          </p>
+
+          <p>
+            <strong>Front-End Developer</strong>: The generic job title that
+            describes a developer who is skilled to some degree at HTML, CSS,
+            DOM, and JavaScript and implementing these technologies on the web
+            platform.
+          </p>
+
+          <p>
+            <strong
+              >Front-End Engineer (aka JavaScript Developer or Full-stack
+              JavaScript Developer)</strong
+            >: The job title given to a developer who comes from a computer
+            science, engineering, background and is using these skills to work
+            with front-end technologies. This role typically requires computer
+            science knowledge and years of software development experience. When
+            the word "JavaScript Application" is included in the job title, this
+            will denote that the developer should be an advanced JavaScript
+            developer possessing advanced programming, software development, and
+            application development skills (i.e has years of experience building
+            front-end software applications).
+          </p>
+
+          <p>
+            <strong>CSS/HTML Developer</strong>: The front-end job title that
+            describes a developer who is skilled at HTML and CSS, excluding
+            JavaScript and Application know how.
+          </p>
+
+          <p>
+            <strong>Front-End Web Designer</strong>: When the word "Designer" is
+            included in the job title, this will denote that the designer will
+            posses front-end skills (i.e., HTML &amp; CSS) but also professional
+            design (Visual Design and Interaction Design) skills.
+          </p>
+
+          <p>
+            <strong
+              >UI (User Interface) Developer/Engineer</strong
+            >: When the word "Interface" or "UI" is included in the job title,
+            this will denote that the developer should posses interaction design
+            skills in addition to front-end developer skills or front-end
+            engineering skills.
+          </p>
+
+          <p>
+            <strong>Mobile/Tablet Front-End Developer</strong>: When the word
+            "Mobile" or "Tablet" is included in the job title, this will denote
+            that the developer has experience developing front-ends that run on
+            mobile or tablet devices (either natively or on the web platform,
+            i.e., in a browser).
+          </p>
+
+          <p>
+            <strong>Front-End SEO Expert</strong>: When the word "SEO" is
+            included in the job title, this will denote that the developer has
+            extensive experience crafting front-end technologies towards an SEO
+            strategy.
+          </p>
+
+          <p>
+            <strong>Front-End Accessibility Expert</strong>: When the word
+            "Accessibility" is included in the job title, this will denote that
+            the developer has extensive experience crafting front-end
+            technologies that support accessibility requirements and standards.
+          </p>
+
+          <p>
+            <strong>Front-End Dev. Ops</strong>: When the word "DevOps" is
+            included in the job title, this will denote that the developer has
+            extensive experience with software development practices pertaining
+            to collaboration, integration, deployment, automation, and
+            quality.
+          </p>
+
+          <p>
+            <strong>Front-End Testing/QA</strong>: When the word "Testing" or
+            "QA" is included in the job title, this will denote that the
+            developer has extensive experience testing and managing software
+            that involves unit testing, functional testing, user testing, and
+            A/B testing.
+          </p>
+
+          <div class="notes">
+            <p><strong>Notes:</strong></p>
+            <ol>
+              <li>
+                If you come across the "Full Stack" or the generic "Web
+                Developer" terms in job titles these words may be used by an
+                employer to describe a role that is responsible for all aspects
+                of web/app development, i.e., both front-end (potentially
+                including design) and back-end.
+              </li>
+              <li>In 2018 front-end developer has become so complex that some employers now divide front-end development into UI front-end engineers, QA front-end engineers and DevOps or infrastructure front-end engineers.</li>
+            </ol>
+          </div>
+
+          <h3>1.2 - Web Technologies Employed by Front-End Developers</h3>
+
+        <p><img src="assets/images/web-tech-employed.jpg" alt="" title="http://www.2n2media.com/compare-front-end-development-and-back-end-development"></p>
+        <p><cite>Image source: <a href="http://www.2n2media.com/compare-front-end-development-and-back-end-development" target="_blank">http://www.2n2media.com/compare-front-end-development-and-back-end-development</a> </cite></p>
+        <p>The following core web technologies are employed by front-end developers (consider learning them in this order):</p>
+        <ol>
+        <li>Hyper Text Markup Language (aka HTML)</li>
+        <li>Cascading Style Sheets (aka CSS)</li>
+        <li>Uniform Resource Locators (aka URLs)</li>
+        <li>Hypertext Transfer Protocol (aka HTTP)</li>
+        <li>JavaScript Programming Language (aka ECMAScript 262)</li>
+        <li>JavaScript Object Notation (aka JSON)</li>
+        <li>Document Object Model (aka DOM)</li>
+        <li>Web APIs (aka HTML5 and friends or Browser APIs)</li>
+        <li>Web Content Accessibility Guidelines (aka WCAG) &amp; Accessible Rich Internet Applications (aka ARIA)</li>
+        </ol>
+        <p>For a comprehensive list of all web related specifications have a look at <a href="https://platform.html5.org/" target="_blank">platform.html5.org</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/API">MDN Web APIs</a>.</p>
+        <p>The nine technologies just mentioned are defined below along with a link to the relevant documentation and specification for each technology.</p>
+        <h4 id="hyper-text-markup-language-aka-html">Hyper Text Markup Language (aka HTML)</h4>
+        <blockquote>
+        <p>HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to create web pages. Web browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language, rather than a programming language.</p>
+        <p><cite>— <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+        <p>Most relevant specifications / documentation:</p>
+        <ul>
+        <li><a href="http://www.w3.org/standards/techs/html#w3c_all" target="_blank">All W3C HTML Spec</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage" target="_blank">The elements of HTML</a> from the Living Standard</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">Global attributes</a></li>
+        <li><a href="https://www.w3.org/TR/2017/REC-html52-20171214/" target="_blank">HTML 5.2 from W3C</a></li>
+        <li><a href="http://w3c.github.io/html/" target="_blank">HTML 5.3 from W3C</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">HTML attribute reference</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML element reference</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage/syntax.html#syntax" target="_blank">The HTML Syntax</a> from the Living Standard</li>
+        </ul>
+        <h4 id="cascading-style-sheets-aka-css">Cascading Style Sheets (aka CSS)</h4>
+        <blockquote>
+        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+        <p><cite>— <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+        <p>Most relevant specifications / documentation:</p>
+        <ul>
+        <li><a href="http://www.w3.org/Style/CSS/current-work" target="_blank">All W3C CSS Specifications</a></li>
+        <li><a href="https://www.w3.org/TR/CSS22/" target="_blank">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS reference</a></li>
+        <li><a href="http://www.w3.org/TR/css3-selectors/" target="_blank">Selectors Level 3</a></li>
+        </ul>
+        <h4 id="hypertext-transfer-protocol-aka-http">Hypertext Transfer Protocol (aka HTTP)</h4>
+        <blockquote>
+        <p>The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web.</p>
+        <p><cite>— <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+        <p>Most relevant specifications:</p>
+        <ul>
+        <li><a href="https://tools.ietf.org/html/rfc2616" target="_blank">Hypertext Transfer Protocol -- HTTP/1.1</a></li>
+        <li><a href="http://httpwg.org/specs/rfc7540.html" target="_blank">HTTP/2</a></li>
+        </ul>
+        <h4 id="uniform-resource-locators-aka-url">Uniform Resource Locators (aka URL)</h4>
+        <blockquote>
+        <p>A uniform resource locator (URL) (also called a web address) is a reference to a resource that specifies the location of the resource on a computer network and a mechanism for retrieving it. A URL is a specific type of uniform resource identifier (URI), although many people use the two terms interchangeably. A URL implies the means to access an indicated resource, which is not true of every URI. URLs occur most commonly to reference web pages (http), but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications.</p>
+        <p><cite>— <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+        <p>Most relevant specifications:</p>
+        <ul>
+        <li><a href="http://www.w3.org/Addressing/URL/url-spec.txt" target="_blank">Uniform Resource Locators (URL)</a></li>
+        <li><a href="https://url.spec.whatwg.org/" target="_blank">URL Living Standard</a></li>
+        </ul>
+        <h4 id="document-object-model-aka-dom">Document Object Model (aka DOM)</h4>
+        <blockquote>
+        <p>The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents. The nodes of every document are organized in a tree structure, called the DOM tree. Objects in the DOM tree may be addressed and manipulated by using methods on the objects. The public interface of a DOM is specified in its application programming interface (API).</p>
+        <p><cite>— <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+        <p>Most relevant specifications / documentation:</p>
+        <ul>
+        <li><a href="https://dom.spec.whatwg.org/" target="_blank">DOM Living Standard</a></li>
+        <li><a href="https://www.w3.org/TR/domcore/" target="_blank">W3C DOM4</a></li>
+        <li><a href="https://www.w3.org/TR/uievents/" target="_blank">UI Events</a></li>
+        </ul>
+        <h4 id="javascript-programming-language-aka-ecmascript-262">JavaScript Programming Language (aka ECMAScript 262)</h4>
+        <blockquote>
+        <p>JavaScript is a high level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern web browsers without plug-ins. JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles. It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage or graphics facilities, relying for these upon the host environment in which it is embedded.</p>
+        <p><cite>— <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+        <p>Most relevant specifications / documentation:</p>
+        <ul>
+        <li><a href="http://ecma-international.org/ecma-262/9.0/index.html#Title" target="_blank">ECMAScript® 2018 Language Specification</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources" target="_blank">All ECMAScript Language Specifications</a></li>
+        </ul>
+        <h4 id="web-apis-aka-html5-and-friends">Web APIs (aka HTML5 and friends)</h4>
+        <blockquote>
+        <p>When writing code for the Web using JavaScript, there are a great many APIs available. Below is a list of all the interfaces (that is, types of objects) that you may be able to use while developing your Web app or site.</p>
+        <p><cite>— <a href="https://developer.mozilla.org/en-US/docs/Web/API" target="_blank">Mozilla</a></cite></p>
+        </blockquote>
+        <p>Most relevant documentation:</p>
+        <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API" target="_blank">Web API Interfaces</a></li>
+        </ul>
+        <h4 id="javascript-object-notation-aka-json">JavaScript Object Notation (aka JSON)</h4>
+        <blockquote>
+        <p>c It is the primary data format used for asynchronous browser/server communication (AJAJ), largely replacing XML (used by AJAX). Although originally derived from the JavaScript scripting language, JSON is a language-independent data format. Code for parsing and generating JSON data is readily available in many programming languages. The JSON format was originally specified by Douglas Crockford. It is currently described by two competing standards, RFC 7159 and ECMA-404. The ECMA standard is minimal, describing only the allowed grammar syntax, whereas the RFC also provides some semantic and security considerations. The official Internet media type for JSON is application/json. The JSON filename extension is .json.</p>
+        <p><cite>— <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+        <p>Most relevant specifications:</p>
+        <ul>
+        <li><a href="http://json.org/" target="_blank">Introducing JSON</a></li>
+        <li><a href="http://jsonapi.org/" target="_blank">JSON API</a></li>
+        <li><a href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf" target="_blank">The JSON Data Interchange Format</a></li>
+        </ul>
+        <h4 id="web-content-accessibility-guidelines-aka-wcag--accessible-rich-internet-applications-aka-aria">Web Content Accessibility Guidelines (aka WCAG) &amp; Accessible Rich Internet Applications (aka ARIA)</h4>
+        <blockquote>
+        <p>Accessibility refers to the design of products, devices, services, or environments for people with disabilities. The concept of accessible design ensures both “direct access” (i.e., unassisted) and "indirect access" meaning compatibility with a person's assistive technology (for example, computer screen readers).</p>
+        <p><cite>— <a href="https://en.wikipedia.org/wiki/Accessibility" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+        <ul>
+        <li><a href="https://www.w3.org/WAI/standards-guidelines/" target="_blank">Web Accessibility Initiative (WAI)</a></li>
+        <li><a href="http://www.w3.org/standards/techs/wcag#w3c_all" target="_blank">Web Content Accessibility Guidelines (WCAG) Current Status</a></li>
+        </ul>
+
+        <h3>1.3 - The Front-end Developer Skill Set</h3>
+                                
+<p><img src="assets/images/front-end-skills.png" alt="" title="http://blog.naustud.io/2015/06/baseline-for-modern-front-end-developers.html"></p>
+<p><cite>Image source: <a href="http://blog.naustud.io/2015/06/baseline-for-modern-front-end-developers.html" target="_blank">http://blog.naustud.io/2015/06/baseline-for-modern-front-end-developers.html</a></cite></p>
+<p>A basic to advanced understanding of HTML, CSS, DOM, JavaScript, HTTP/URL, and the web browser is assumed for any type of professional front-end developer. </p>
+<p>Beyond the skills just mentioned, a front-end developer might also be specifically skilled in one or more of the following:</p>
+<ul>
+<li>Content Management Systems (aka CMS)</li>
+<li>Node.js</li>
+<li>Cross-Browser Testing</li>
+<li>Cross-Platform Testing</li>
+<li>Unit Testing</li>
+<li>Cross-Device Testing</li>
+<li>Accessibility / WAI-ARIA</li>
+<li>Search Engine Optimization (aka SEO)</li>
+<li>Interaction or User Interface Design</li>
+<li>User Experience</li>
+<li>Usability</li>
+<li>E-commerce Systems</li>
+<li>Portal Systems</li>
+<li>Wireframing</li>
+<li>CSS Layout / Grids</li>
+<li>DOM Manipulation (e.g., jQuery)</li>
+<li>Mobile Web Performance</li>
+<li>Load Testing</li>
+<li>Performance Testing</li>
+<li>Progressive Enhancement / Graceful Degradation</li>
+<li>Version Control (e.g., GIT)</li>
+<li>MVC / MVVM / MV* </li>
+<li>Functional Programming</li>
+<li>Data Formats (e.g., JSON, XML)</li>
+<li>Data APIs (e.g Restful API)</li>
+<li>Web Font Embedding</li>
+<li>Scalable Vector Graphics (aka SVG)</li>
+<li>Regular Expressions</li>
+<li>Content Strategy</li>
+<li>Microdata / Microformats</li>
+<li>Task Runners, Build Tools, Process Automation Tools</li>
+<li>Responsive Web Design</li>
+<li>Object-Oriented Programming</li>
+<li>Application Architecture</li>
+<li>Modules</li>
+<li>Dependency Managers</li>
+<li>Package Managers</li>
+<li>JavaScript Animation</li>
+<li>CSS Animation</li>
+<li>Charts / Graphs</li>
+<li>UI Widgets</li>
+<li>Code Quality Testing</li>
+<li>Code Coverage Testing</li>
+<li>Code Complexity Analysis</li>
+<li>Integration Testing</li>
+<li>Command Line / CLI </li>
+<li>Templating Strategies</li>
+<li>Templating Engines</li>
+<li>Single Page Applications</li>
+<li>XHR Requests (aka AJAX)</li>
+<li>Web/Browser Security</li>
+<li>HTML Semantics</li>
+<li>Browser Developer Tools</li>
+</ul>
+
+        </div>
+
+        <div id="chapter3" class="chapter">
+          <h2>
+            Chapter 3. Learning To Be A Front-end Developer: Self Directed
+          </h2>
+        </div>
+
+        <div id="chapter4" class="chapter">
+          <h2>
+            Chapter 4. Learning To Be A Front-end Developer: Instructor Directed
+          </h2>
+        </div>
+
+        <div id="chapter5" class="chapter">
+          <h2>Chapter 5. Front-end Newsletters & Podcasts</h2>
+        </div>
+
+        <div id="chapter6" class="chapter">
+          <h2>Chapter 6. Front-end Tools</h2>
+        </div>
+
+        <div id="chapter7" class="chapter">
+          <h2>Chapter 7. Recap of Front-end Development in 2017</h2>
+
+
+<ul><li>
+  HTML 5.3 is
+  <a
+    href="https://www.w3.org/blog/2017/12/html-5-2-is-done-html-5-3-is-coming/"
+    target="_blank"
+    >being drafted</a
+  >.</li></ul>
+
+
+
+          <ul>
+            <li>
+              HTML 5.2 is
+              <a
+                href="https://www.w3.org/blog/2017/12/html-5-2-is-done-html-5-3-is-coming/"
+                target="_blank"
+                >done</a
+              >.
+            </li>
+            <li>
+              It was a banner year for
+              <a href="https://vuejs.org/" target="_blank">Vue.js</a> in terms
+              of adoption and popularity.
+              <a
+                href="https://www.npmjs.com/npm/state-of-javascript-frameworks-2017-part-1"
+                target="_blank"
+                >No question</a
+              >
+              about
+              <a
+                href="https://stateofjs.com/2017/front-end/results/"
+                target="_blank"
+                >it</a
+              >.
+            </li>
+            <li>
+              The
+              <a
+                href="https://medium.com/@jerrylowm/the-death-of-front-end-developers-803a95e0f411"
+                target="_blank"
+                >great</a
+              >
+              divide between a front-end HTML &amp; CSS developer v.s.
+              <a
+                href="https://medium.com/@mandy.michael/is-there-any-value-in-people-who-cannot-write-javascript-d0a66b16de06"
+                target="_blank"
+                >front-end application developer is realized/verbalized</a
+              >.
+            </li>
+            <li>
+              Being a Front-end JavaScript developer who builds applications
+              using web technologies continues to get better and
+              <a
+                href="https://blog.logrocket.com/the-increasing-nature-of-frontend-complexity-b73c784c09ae"
+                target="_blank"
+                >worse</a
+              >.
+            </li>
+            <li>
+              This year seemed fuller than most of app/framework solutions
+              trying to contend with the mainstream JavaScript app tools (i.e.
+              <a
+                href="https://stateofjs.com/2017/front-end/results"
+                target="_blank"
+                >React, Angular, and Vue etc...</a
+              >) Let me list them for you.
+              <a href="http://moonjs.ga/docs/overview.html" target="_blank"
+                >Moon</a
+              >, <a href="https://markojs.com/" target="_blank">Marko</a>,
+              <a href="https://github.com/hyperapp/hyperapp" target="_blank"
+                >Hyperapp</a
+              >,
+              <a href="http://quasar-framework.org/" target="_blank"
+                >Quasar Framework</a
+              >, <a href="https://poi.js.org" target="_blank">POI</a>,
+              <a href="https://frint.js.org/" target="_blank">frint</a>,
+              <a href="https://bunnyjs.com/" target="_blank">BunnyJS</a>,
+              <a href="http://jsblocks.com/" target="_blank">jsblocks</a>,
+              <a href="https://sapper.svelte.technology/" target="_blank"
+                >Sapper</a
+              >,
+              <a href="https://github.com/stimulusjs/stimulus" target="_blank"
+                >Stimulus</a
+              >,
+              <a href="https://github.com/choojs/choo" target="_blank">Choo</a>,
+            </li>
+            <li>
+              This was the year that jsbin and jsfiddle evolved to things like
+              <a href="https://stackblitz.com/" target="_blank">StackBlitz</a>
+              and
+              <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a>.
+              Making it dead simple to share a working app.
+            </li>
+            <li>
+              React continues to be flattered by things like
+              <a href="https://preactjs.com/" target="_blank">preact</a>,
+              <a href="https://infernojs.org/" target="_blank">inferno</a>,
+              <a href="https://github.com/NervJS/nerv" target="_blank">nerv</a>,
+              <a href="https://github.com/dvajs/dva" target="_blank">dva</a>,
+              and
+              <a href="https://github.com/alibaba/rax" target="_blank">rax</a>.
+            </li>
+            <li>
+              Cheatsheets got organized with
+              <a href="https://devhints.io/" target="_blank">devhints.io</a>.
+            </li>
+            <li>
+              We figured out that the correct pattern for an app boilerplate/cli
+              tool is something very opinionated like
+              <a
+                href="https://github.com/facebookincubator/create-react-app"
+                target="_blank"
+                >Create React App</a
+              >
+              with the ability to
+              <a
+                href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-eject"
+                target="_blank"
+                >escape</a
+              >
+              from it when needed.
+            </li>
+            <li>
+              Most developers found that the combination of a really good
+              <a href="https://code.visualstudio.com/" target="_blank"
+                >code editor</a
+              >, <a href="https://eslint.org/" target="_blank">eslint</a>, and
+              now
+              <a href="https://github.com/prettier/prettier" target="_blank"
+                >prettier</a
+              >
+              make writing code faster, easier, pleasurable.
+            </li>
+            <li>
+              CSS
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+                target="_blank"
+                >Flexbox</a
+              >
+              and
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+                target="_blank"
+                >Grid</a
+              >
+              gain browser support and thus more developers are paying
+              <a
+                href="https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/"
+                target="_blank"
+                >attention to both</a
+              >.
+            </li>
+            <li>
+              We
+              <a
+                href="https://blog.chromium.org/2017/05/chrome-59-beta-headless-chromium-native.html"
+                target="_blank"
+                >get</a
+              >, a
+              <a
+                href="https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md"
+                target="_blank"
+                >headless chrome</a
+              >, finally.
+            </li>
+            <li>
+              You no longer need Less or Sass
+              <a href="https://shoelace.style" target="_blank">to do</a> amazing
+              <a href="http://cssnext.io/features/" target="_blank"
+                >things with CSS</a
+              >.
+            </li>
+            <li>
+              CSS
+              <a
+                href="http://ryanogles.by/css/javascript/2017/05/25/the-state-of-css.html"
+                target="_blank"
+                >revolutions/revolts</a
+              >
+              are under way.
+            </li>
+            <li>
+              JavaScript object explorer tools have arrived,
+              <a href="https://sdras.github.io/array-explorer/" target="_blank"
+                >JavaScript Array Explorer</a
+              >
+              and
+              <a href="https://sdras.github.io/object-explorer/" target="_blank"
+                >JavaScript Object Explorer</a
+              >. This is a handy interface pattern for learning about JavaScript
+              data types (e.g. Objects and Arrays) and their methods.
+            </li>
+            <li>
+              The
+              <a
+                href="http://gs.statcounter.com/browser-market-share"
+                target="_blank"
+                >Chrome web browser dominates the market</a
+              >
+              and people begin to fear the past might be
+              <a
+                href="https://www.theverge.com/2018/1/4/16805216/google-chrome-only-sites-internet-explorer-6-web-standards"
+                target="_blank"
+                >repeating itself</a
+              >.
+            </li>
+            <li>
+              <a href="https://brave.com/" target="_blank">Brave</a> becomes the
+              most pleasant and safest way to browser the internet.
+            </li>
+            <li>
+              <a
+                href="https://www.infoq.com/news/2017/04/Phantomjs-future-uncertain"
+                target="_blank"
+                >PhantomJS is no longer maintained</a
+              >,
+              <a
+                href="https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md"
+                target="_blank"
+                >Headless Chrome</a
+              >
+              and
+              <a
+                href="https://github.com/GoogleChrome/puppeteer"
+                target="_blank"
+                >Puppeteer</a
+              >
+              step in.
+            </li>
+            <li>
+              <a href="https://prettier.io/" target="_blank">Prettier</a> comes
+              from left field and becomes a staple for development.
+            </li>
+            <li>
+              A whole lot of JS developers adopt
+              <strong><em>bolted on</em></strong> static type systems for mostly
+              <a
+                href="http://2ality.com/2018/03/javascript-typescript-reasonml.html#conclusion-the-javascript-ecosystem-is-stronger-than-ever"
+                target="_blank"
+                >subjective reasons or band wagon emotions</a
+              >. Some sell out completely to
+              <a href="https://github.com/Microsoft/TypeScript" target="_blank"
+                >Typescript</a
+              >
+              and the Microsoft way of doing things while others take on a
+              slower approach with
+              <a href="https://github.com/facebook/flow" target="_blank">Flow</a
+              >. One thing is for sure, most developers don't need a bolted on
+              type system, they are simply complicating already complex problems
+              and solutions. Like most things, most of this trend is subjective
+              dogma not objective value (Languages with built in static type
+              systems are a different matter).
+            </li>
+            <li>
+              <a href="https://www.staticgen.com/" target="_blank"
+                >Static site generators</a
+              >
+              &amp;
+              <a
+                href="https://en.wikipedia.org/wiki/Headless_CMS"
+                target="_blank"
+                >API CMS tools aka Headless CMS's</a
+              >
+              are now on most developers radar.
+            </li>
+            <li>
+              Web components still lurking and wait for significant traction by
+              developers that might never come to be.
+            </li>
+            <li>
+              JavaScript settled and
+              <a
+                href="http://michelebertoli.github.io/css-in-js/"
+                target="_blank"
+                >CSS erupt</a
+              >
+              and everyone will cry fatigue by this time next year.
+            </li>
+            <li>
+              A lot of people stop doing CSS in CSS and
+              <a
+                href="https://speakerdeck.com/vjeux/react-css-in-js"
+                target="_blank"
+                >move</a
+              >
+              to
+              <a
+                href="https://levelup.gitconnected.com/a-brief-history-of-css-in-js-how-we-got-here-and-where-were-going-ea6261c19f04"
+                target="_blank"
+                >CSS in JS</a
+              >
+              when building application using component trees.
+            </li>
+            <li>
+              <a href="https://yarnpkg.com/en/" target="_blank">Yarn</a> seems
+              to have filled a need, because a lot of people jumped the npm
+              ship. However, the real value of Yarn is the fact that it brings
+              competition to NPM. Making npm better.
+            </li>
+            <li>
+              A new video format for Interactive coding screencasts (recording
+              of working in a live editor that you can edit too) becomes a real
+              thing with
+              <a href="https://scrimba.com/about" target="_blank">Scrimba</a>.
+            </li>
+            <li>
+              Most people begin to see the correlation between
+              <a
+                href="https://en.wikipedia.org/wiki/Component-based_software_engineering"
+                target="_blank"
+                >component architectures</a
+              >
+              and
+              <a href="http://patternlab.io/" target="_blank">atomic design</a>.
+            </li>
+            <li>
+              And so it begins that ES modules
+              <a
+                href="https://philipwalton.com/articles/deploying-es2015-code-in-production-today/"
+                target="_blank"
+                >will</a
+              >
+              be
+              <a
+                href="https://medium.com/dev-channel/es6-modules-in-chrome-canary-m60-ba588dfb8ab7"
+                target="_blank"
+                >part</a
+              >
+              of
+              <a href="https://caniuse.com/#feat=es6-module" target="_blank"
+                >the browser</a
+              >
+              and if used a
+              <a href="https://github.com/WebReflection/ecma" target="_blank"
+                >backup plan</a
+              >
+              will be required (i.e. a bundle from something like webpack).
+            </li>
+            <li>
+              <a
+                href="https://codeburst.io/javascript-trends-in-2018-3fb0077259"
+                target="_blank"
+                >MVC frameworks are on the outs</a
+              >.
+            </li>
+            <li>
+              Developing and displaying React components outside of your
+              applications is made popular by tools like
+              <a href="http://bluekit.blueberry.io/" target="_blank">Bluekit</a
+              >,
+              <a href="https://storybook.js.org/" target="_blank">Storybook</a>,
+              <a href="Styleguidist">React Styleguidist</a>, and
+              <a href="https://bitsrc.io/" target="_blank">bit</a>.
+            </li>
+            <li>
+              Getting a front-end job in 2017 is about
+              <a
+                href="https://research.hackerrank.com/developer-skills/2018/"
+                target="_blank"
+                >experience, which is displayed from personal projects and a
+                developers Github account</a
+              >.
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content"
+                target="_blank"
+                >Preloading</a
+              >
+              resources (CSS, JavaScript, Media etc..) from HTML documents
+              <a href="https://www.w3.org/TR/preload/" target="_blank"
+                >arrives</a
+              >.
+            </li>
+            <li>
+              <a href="https://www.cypress.io/how-it-works/" target="_blank"
+                >Cypress arrives</a
+              >
+              as a complete testing solution and hopefully testing will get
+              better as end to end testing becomes the focus for app code.
+            </li>
+            <li>
+              <a
+                href="https://blog.mozilla.org/blog/2017/11/13/webassembly-in-browsers/"
+                target="_blank"
+                >WebAssembly support now shipping in all major browsers</a
+              >
+            </li>
+            <li>
+              <a href="https://webpack.js.org/" target="_blank">Webpack</a>
+              dominates, and then
+              <a href="https://github.com/parcel-bundler/parcel" target="_blank"
+                >competitors</a
+              >
+              show up.
+            </li>
+            <li>
+              <a
+                href="https://reactjs.org/blog/2017/09/26/react-v16.0.html"
+                target="_blank"
+                >React 16 aka fiber is released</a
+              >.
+            </li>
+            <li>
+              React begins to rival jQuery in popularity in certain contexts.
+            </li>
+            <li>
+              React
+              <a
+                href="https://twitter.com/npmjs/status/949017852702543876"
+                target="_blank"
+                >clearly</a
+              >
+              is the
+              <a
+                href="https://www.npmjs.com/npm/state-of-javascript-frameworks-2017-part-1"
+                target="_blank"
+                >most used</a
+              >
+              tool
+              <a
+                href="https://stackoverflow.blog/2018/01/11/brutal-lifecycle-javascript-frameworks/"
+                target="_blank"
+                >for building UI's</a
+              >
+              with state.
+            </li>
+            <li>
+              Facebook
+              <a
+                href="https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/"
+                target="_blank"
+                >sheds its React BSD license</a
+              >
+              for the MIT license (same for Jest, Flow, Immutable.js, and
+              GraphQL)
+            </li>
+            <li>
+              <a
+                href="https://dev-blog.apollodata.com/2017-the-year-in-graphql-124a050d04c6"
+                target="_blank"
+                >GraphQL</a
+              >
+              got <a href="https://graphcms.com/" target="_blank">hot</a> in
+              <a href="https://www.graphql.com/case-studies/" target="_blank"
+                >2017</a
+              >.
+            </li>
+            <li>
+              Facebook continues to
+              <a href="https://code.facebook.com/projects/" target="_blank"
+                >take charge in the development space</a
+              >
+              with forthcoming tools like
+              <a href="https://prepack.io/" target="_blank">prepack.io</a>.
+            </li>
+            <li>
+              As expected
+              <a
+                href="https://www.ecma-international.org/publications/standards/Ecma-262.htm"
+                target="_blank"
+                >ECMA-262 edition 8 is released</a
+              >.
+            </li>
+            <li>
+              <a href="https://reacttraining.com/react-router/" target="_blank"
+                >React Router</a
+              >
+              finally stabilizes.
+            </li>
+            <li>
+              All modern browsers pretty much now
+              <a
+                href="http://kangax.github.io/compat-table/es6/"
+                target="_blank"
+                >support ECMAScript 2015</a
+              >
+              (aka ES6).
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function"
+                target="_blank"
+                >Async JavaScript functions</a
+              >
+              start getting some serious attention and usage. Mostly because all
+              modern browsers
+              <a href="https://caniuse.com/#search=async%20fun" target="_blank"
+                >now support Async functions</a
+              >.
+            </li>
+            <li>
+              Mobile development,
+              <a href="https://flutter.io/" target="_blank">still</a>
+              <a href="https://facebook.github.io/react-native/" target="_blank"
+                >too</a
+              >
+              <a href="https://www.nativescript.org/" target="_blank">hard</a>.
+              A strong rebellion advocating the
+              <a
+                href="https://blog.mozilla.org/firefox/progressive-web-apps-whats-big-deal/"
+                target="_blank"
+                >web platform</a
+              >
+              as a solution to the pain
+              <a
+                href="https://joreteg.com/blog/betting-on-the-web"
+                target="_blank"
+                >gained momentum</a
+              >
+              this year.
+            </li>
+          </ul>
+        </div>
+
+        <div id="chapter8" class="chapter">
+          <h2>Chapter 8. In 2018 expect...</h2>
+          <ul>
+            <li>
+              Nothing will change or slow the usage or popularity of React for
+              many years to come.
+            </li>
+            <li>
+              GraphQL will
+              <a
+                href="https://medium.freecodecamp.org/rest-apis-are-rest-in-peace-apis-long-live-graphql-d412e559d8e4"
+                target="_blank"
+                >replace</a
+              >
+              a lot of REST API's this year.
+            </li>
+            <li>
+              The web will continue to become more native-like with offline
+              capabilities and seamless mobile experiences.
+            </li>
+            <li>
+              HTML 5.3 is
+              <a
+                href="https://www.w3.org/blog/2017/12/html-5-2-is-done-html-5-3-is-coming/"
+                target="_blank"
+                >coming</a
+              >.
+            </li>
+            <li>
+              Keep an eye on
+              <a
+                href="https://medium.com/@ericsimons/introducing-turbo-5x-faster-than-yarn-npm-and-runs-natively-in-browser-cc2c39715403"
+                target="_blank"
+                >turbo</a
+              >, a blazing fast NPM client.
+            </li>
+            <li>
+              Expect to learn and use
+              <a href="https://caniuse.com/#feat=transforms3d" target="_blank"
+                >CSS transforms 3d</a
+              >,
+              <a href="https://caniuse.com/#search=transitions" target="_blank"
+                >CSS transitions</a
+              >,
+              <a href="https://caniuse.com/#search=flex" target="_blank"
+                >CSS flexbox</a
+              >,
+              <a href="https://caniuse.com/#feat=css-filters" target="_blank"
+                >CSS filters</a
+              >,
+              <a href="https://caniuse.com/#search=grid" target="_blank"
+                >CSS grid</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://insights.stackoverflow.com/survey/2017#technology-programming-languages"
+                target="_blank"
+                >JavaScript usage will continue to grow</a
+              >
+              with no
+              <a
+                href="https://insights.stackoverflow.com/survey/2017#technology-most-popular-languages-by-occupation"
+                target="_blank"
+                >slowdown in sight</a
+              >.
+            </li>
+            <li>
+              Still waiting on
+              <a href="http://webassembly.org/" target="_blank">Web Assembly</a>
+              to peak. This will likely require
+              <a href="https://webassembly.studio" target="_blank">tooling</a>.
+            </li>
+            <li>
+              Universal/isomorphic JavaScript solutions continue to evolve e.g.
+              <a href="https://github.com/zeit/next.js" target="_blank"
+                >next.js</a
+              >
+              and
+              <a href="https://sapper.svelte.technology/" target="_blank"
+                >Sapper</a
+              >.
+            </li>
+            <li>
+              Web components still lurk and wait for significant traction from
+              developers.
+            </li>
+            <li>
+              I believe the end is in sight for
+              <a
+                href="https://css-tricks.com/future-front-end-web-development/#article-header-id-7"
+                target="_blank"
+                >CSS pre-processors</a
+              >
+              as
+              <a href="https://github.com/postcss" target="_blank">PostCSS</a>,
+              <a href="http://cssnext.io/" target="_blank">CSSnext</a>, and CSS
+              in JS take over.
+            </li>
+            <li>
+              Older server centric
+              <a href="https://unpoly.com" target="_blank"
+                >application patterns</a
+              >
+              show
+              <a href="https://github.com/turbolinks/turbolinks" target="_blank"
+                >up again</a
+              >
+              but
+              <a
+                href="https://goiabada.blog/can-you-build-a-single-page-application-without-a-front-end-framework-6799cee03750"
+                target="_blank"
+                >with</a
+              >
+              a
+              <a href="http://triskweline.de/unpoly-rugb/#/41" target="_blank"
+                >new</a
+              >
+              <a href="https://github.com/stimulusjs/stimulus" target="_blank"
+                >spin</a
+              >. The pendulum could
+              <a
+                href="http://blog.bloomca.me/2018/02/04/spa-is-not-silver-bullet.html"
+                target="_blank"
+                >start</a
+              >
+              to swinging
+              <a
+                href="https://m.signalvnoise.com/stimulus-1-0-a-modest-javascript-framework-for-the-html-you-already-have-f04307009130"
+                target="_blank"
+                >away from strick SPA applications</a
+              >. People will begin to
+              <a
+                href="https://m.signalvnoise.com/stimulus-1-0-a-modest-javascript-framework-for-the-html-you-already-have-f04307009130"
+                target="_blank"
+                >pull back on the complexity of single page applications</a
+              >
+              and return to things like
+              <a href="https://github.com/defunkt/jquery-pjax" target="_blank"
+                >pjax</a
+              >
+              (A mix of SPA and Server-side Rendering. See
+              <a
+                href="https://stimulusjs.org/handbook/introduction"
+                target="_blank"
+                >https://stimulusjs.org</a
+              >).
+            </li>
+            <li>
+              <a
+                href="https://developers.google.com/web/progressive-web-apps/"
+                target="_blank"
+                >Progressive Web Applications</a
+              >
+              hopefully will catch fire. If they don't, I fear they never will.
+              At least not in their current form.
+            </li>
+            <li>
+              <a
+                href="http://merehead.com/blog/web-development-trends-2018/"
+                target="_blank"
+                >"Chatbots created on the basis of artificial intelligence and
+                neural networks will continue to evolve helping to increase
+                communication online. I wonder what it will lead to, but this is
+                unconditional web development trends 2018"</a
+              >. Nods.
+            </li>
+            <li>
+              Vue.js
+              <a
+                href="http://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue"
+                target="_blank"
+                >usage will likely overtake all Angular usage</a
+              >.
+            </li>
+            <li>
+              AR/AV,
+              <a
+                href="https://www.independent.co.uk/life-style/gadgets-and-tech/news/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html"
+                target="_blank"
+                >AI</a
+              >, and chat bots will continue to evolve and find their sweet
+              spot.
+            </li>
+            <li>
+              JavaScript
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"
+                target="_blank"
+                >Symbol</a
+              >
+              and
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator"
+                target="_blank"
+                >Generators</a
+              >
+              will likely go unnoticed by most front-end developers.
+            </li>
+            <li>
+              More developers will divorce themselves from plain JavaScript and
+              try <a href="http://elm-lang.org/" target="_blank">to</a>
+              <a
+                href="https://www.typescriptlang.org/index.html"
+                target="_blank"
+                >marry</a
+              >
+              <a href="https://reasonml.github.io/" target="_blank">another</a>.
+              But, just like in marital divorce one always takes most of the
+              same problems with them to the greener grass and little actually
+              changes. Preferences and values just get re-prioritized and
+              <a href="http://coffeescript.org/" target="_blank"
+                >history will repeat itself</a
+              >.
+            </li>
+            <li>Webpack 4 will happen, and be better, due to competition!</li>
+            <li>
+              Continued
+              <a
+                href="https://css-in-js-playground.com/?theme=light"
+                target="_blank"
+                >exploration</a
+              >
+              for the ideal CSS solution for a tree of UI components will not
+              cease.
+            </li>
+            <li>
+              State management gets a
+              <a
+                href="https://www.youtube.com/watch?v=kp-NOggyz54"
+                target="_blank"
+                >reset</a
+              >
+              and
+              <a href="https://github.com/thejameskyle/unstated" target="_blank"
+                >people start to simplify</a
+              >. Hopefully, this will be the year for solutions like
+              <a href="https://github.com/mobxjs/mobx" target="_blank">mobx</a>
+              to shine.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/slideout.min.js "></script>
+    <script src="assets/jquery-3.3.1.slim.min.js "></script>
+
+    <script>
+      // Create slide out TOC
+      var slideout = new Slideout({
+        panel: document.getElementById("panel"),
+        menu: document.getElementById("menu"),
+        padding: 356,
+        tolerance: 70
+      });
+
+      // Create TOC dynamically from content
+      jQuery(".chapter").each(function(index) {
+        jQuery("h2", "#chapter" + (index + 1)).each(function(i) {
+          $(this).attr("id", index + 1);
+          $("#toc").append(
+            '<h5><a href="#' + (index + 1) + '">' + $(this).html() + "</a></h5>"
+          );
+        });
+
+        jQuery("h3", "#chapter" + (index + 1)).each(function(i) {
+          $(this).attr("id", index + 1 + "." + (i + 1));
+          $("#toc").append(
+            '<h6><a href="#' +
+              (index + 1) +
+              "." +
+              (i + 1) +
+              '">' +
+              $(this).html() +
+              "</a></h6>"
+          );
+        });
+      });
+
+      jQuery("#panel").on(
+        "click",
+        "a:not(.codesandboxlink a, .toolbar a)",
+        function() {
+          window.open($(this).attr("href"));
+          return false;
+        }
+      );
+
+      // create link to codesandob
+      jQuery(".line-numbers:has(.language-js)")
+        .not(":has(.noRun)")
+        .before(
+          '<div class="codesandboxlink"><a href="#">run/edit in codesandbox.io</a></div>'
+        );
+
+      // create event handler for codesandbox link
+      jQuery("#panel").on("click", ".codesandboxlink a", function(e) {
+        const code = $(this)
+          .parent()
+          .next(".code-toolbar:has(.language-js)")
+          .find("code")
+          .text();
+        var newWindow = window.open("", "_blank");
+        fetch("https://codesandbox.io/api/v1/sandboxes/define?json=1", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: JSON.stringify({
+            files: {
+              "index.js": {
+                content: code
+              },
+              "index.html": {
+                content:
+                  '<script src="./node_modules/babel-polyfill/dist/polyfill.js"><\/script><script src="https://unpkg.com/core-js-bundle@3.0.0-beta.3/index.js"><\/script><script src="index.js"><\/script>'
+              },
+              ".babelrc": {
+                content: {
+                  presets: ["env", "stage-0"]
+                }
+              },
+              "package.json": {
+                content: {
+                  name: "ES2015+ Enlightenment Code Example",
+                  version: "1.0.0",
+                  description: "Simple Parcel/Babel Sandbox",
+                  main: "index.html",
+                  scripts: {
+                    start: "parcel index.html --open",
+                    build: "parcel build index.html"
+                  },
+                  dependencies: { "babel-polyfill": "6.26.0" },
+                  devDependencies: {
+                    "parcel-bundler": "^1.9.7",
+                    "babel-preset-env": "^1.7.0",
+                    "babel-preset-stage-0": "^6.24.1"
+                  }
+                }
+              }
+            }
+          })
+        })
+          .then(x => x.json())
+          .then(data => {
+            newWindow.location.href =
+              "https://codesandbox.io/embed/" +
+              data.sandbox_id +
+              "?forcerefresh=1&eslint=1&expanddevtools=1&hidenavigation=1&module=%2Findex.js";
+          });
+        e.preventDefault();
+      });
+
+      // toggle TOC from hamburger icon
+      document
+        .querySelector("#menuButton")
+        .addEventListener("click", function() {
+          slideout.toggle();
+        });
+
+      // toggle TOC on window resize
+      window.addEventListener("resize", resizeThrottler, false);
+      var resizeTimeout;
+      function resizeThrottler() {
+        // ignore resize events as long as an actualResizeHandler execution is in the queue
+        if (!resizeTimeout) {
+          resizeTimeout = setTimeout(function() {
+            resizeTimeout = null;
+            actualResizeHandler();
+
+            // The actualResizeHandler will execute at a rate of 15fps
+          }, 66);
+        }
+      }
+      function actualResizeHandler() {
+        if (window.innerWidth > 1036) {
+          slideout.open();
+        } else {
+          slideout.close();
+        }
+      }
+
+      // open TOC on load if window is wide enough
+      window.addEventListener("load", function(event) {
+        if (window.innerWidth > 1036) {
+          slideout.open();
+        } else {
+          slideout.close();
+        }
+      });
+    </script>
+  </body>
+</html>
