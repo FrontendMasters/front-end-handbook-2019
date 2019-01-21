@@ -290,3 +290,17 @@ blockquote span {
     font-weight: bold;
     margin-top: 1em;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  tbody tr:nth-child(odd) {
+    background: #eee;
+  }
