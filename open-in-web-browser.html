@@ -246,8 +246,8 @@
             graphical user interface that can be controlled from a command line
             interface programmatically for the purpose of web page automation
             (e.g., functional testing, scraping, unit testing, etc.). Think of
-            headless browsers as a browser that you can run from the command
-            line that can retrieve and traverse web pages.
+            headless browsers as a browser that you can run programmatically from the command
+            line that can retrieve and traverse web page code.
           </p>
           <p>The most common headless browsers are:</p>
           <ul>
@@ -324,7 +324,7 @@
           <p>
             Eventually, what is learned from web browser development can be used
             by front-end developers to craft code for environments that are not
-            fueled by a browser engine. As of late, development environments are
+            fueled by a browser engine (i.e. web platform). As of late, development environments are
             being dreamed up that use web technologies (e.g., CSS and
             JavaScript), without web engines, to create native applications.
           </p>
@@ -343,13 +343,7 @@
             <ol>
               <li>
                 Make sure you are clear what exactly is meant by the "web
-                platform". Read,
-                <a
-                  href="http://tess.oconnor.cx/2009/05/what-the-web-platform-is"
-                  target="_blank"
-                  >"The Web platform: what it is"</a
-                >
-                and read the,
+                platform". Read the,
                 <a
                   href="https://en.wikipedia.org/wiki/Open_Web_Platform"
                   target="_blank"
@@ -371,7 +365,7 @@
           <section class="sub">
             <p>
               This chapter will break down and broadly describes the practice of
-              front-end engineering.
+              front-end engineering starting with, "How Front-End Developers Are Made".
             </p>
           </section>
 
@@ -382,7 +376,7 @@
 <p>Today, in general, one can't go to college and expect to graduate with a degree in front-end engineering. And, I rarely hear of or meet front-end developers who suffered through what is likely a deprecated computer science degree or graphic design degree to end up writing HTML, CSS, and JavaScript professionally. From my perspective, most of the people working on the front-end today generally seem to be self taught from the ground up or cross over into the front-end space from design or computer science fields.</p>
 <p>If you were to set out today to become a front-end developer I would loosely strive to follow the process outlined below (Chapter 3 and Chapter 4 will dive into more details on learning resources).</p>
 <ol>
-<li>Learn, roughly, how the <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">web</a> <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work">platform</a> works. Make sure you know the "what" and "where" of <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">HTML, CSS, DOM, JavaScript, Domains, DNS, URLs, HTTP, browsers, and servers/hosting</a>. Don't dive deep on anything just yet, just aim to understand the parts at play and they loosely fit together. Start by building simple web pages.</li>
+<li>Learn, roughly, how the <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">web</a> <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work">platform</a> works. Make sure you know the "what" and "where" of <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">HTML, CSS, DOM, JavaScript, Domains, DNS, URLs, HTTP, browsers, and servers/hosting</a>. Don't dive deep on anything just yet, just aim to understand the parts at play and how they loosely fit together. Start by building simple web pages.</li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">Learn HTML</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Learn CSS</a></li>
 <li><a href="https://youtu.be/QjKH1J77gjI?list=PL055Epbe6d5bQubu5EWf_kUNA3ef_qbmL" target="_blank">Learn JavaScript</a></li>
@@ -393,29 +387,29 @@
 <li>Get opinionated and customize your tool box with whatever makes sense to your brain (e.g. Webpack, React, and Mobx).</li>
 <li>Learn Node.js</li>
 </ol>
-<p>A short word of advice on learning. <a href="https://youtu.be/QjKH1J77gjI?list=PL055Epbe6d5bQubu5EWf_kUNA3ef_qbmL" target="_blank">Learn the actual underlying technologies, before learning abstractions.</a> Don't learn jQuery, learn the DOM. Don't learn SASS, learn CSS. Don't learn HAML, learn HTML. Don't learn TypeScript, learn JavaScript. Don't learn Handlebars, learn JavaScript ES6 templates. Don't just use Bootstrap, learn UI patterns. </p>
-<p>Lately a lot of non-accredited, expensive, front-end code schools/bootcamps have emerged. These avenues of becoming a front-end developer are typically teacher directed courses, that follow a more traditional style of learning, from an official instructor (i.e., syllabus, test, quizzes, projects, team projects, grades, etc.). Keep in mind, if you are considering an expensive training program, this is the web! Everything you need to learn is on the web for the taking, costing little to nothing. However, if you need someone to tell you how to take and learn what is actually free, and hold you accountable for learning it, you might consider an traditional instructor lead class room setting. Otherwise, I am not aware of any other profession that is practically free for the taking with an internet connection, a <a href="https://frontendmasters.com/join/">couple dollars a month for screencasting memberships</a>, and a burning desire for knowledge.</p>
+<p>A short word of advice on learning. <a href="https://youtu.be/QjKH1J77gjI?list=PL055Epbe6d5bQubu5EWf_kUNA3ef_qbmL" target="_blank">Learn the actual underlying technologies, before learning abstractions.</a> Don't learn jQuery, learn the DOM. Don't learn SASS, learn CSS. Don't learn JSX, learn HTML. Don't learn TypeScript, learn JavaScript. Don't learn Handlebars, learn JavaScript ES6 templates. Don't just use Bootstrap, learn UI patterns. </p>
+<p>Lately a lot of non-accredited, expensive, front-end code schools/bootcamps have emerged. These avenues of becoming a front-end developer are typically teacher directed courses, that follow a more traditional style of learning, from an official instructor (i.e., syllabus, test, quizzes, projects, team projects, grades, etc.). </p>
+  
+  <p>Keep in mind, if you are considering an expensive training program, this is the web! Everything you need to learn is on the web for the taking, costing little to nothing. However, if you need someone to tell you how to take and learn what is low cost to free, and hold you accountable for learning it, you should consider a traditional instructor lead class room setting. Otherwise, I am not aware of any other profession that is practically free for the taking with an internet connection, a <a href="https://frontendmasters.com/join/">couple dollars a month for screencasting memberships</a>, and a burning desire for knowledge.</p>
 <p>For example if you want to get going today, consuming one or more of the following self-directed resources below can work:</p>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Getting started with the Web</a> [read]</li>
 <li><a href="https://www.youtube.com/watch?v=Lsg84NtJbmI" target="_blank">So, You Want to be a Front-End Engineer</a> [watch]</li>
-<li><a href="https://gist.github.com/stevekinney/03027e71aac341af14a2" target="_blank">Front-End Curriculum</a> [read]</li>
+<li><a href="https://frontendmasters.com/learn" target="_blank">Frontend Masters Learning Paths</a> [watch][$]</li>
 <li><a href="https://frontendmasters.com/courses/web-development-v2/" target="_blank">Introduction to Web Development</a> [watch][$]</li>
 <li><a href="https://teamtreehouse.com/techdegree/front-end-web-development-2" target="_blank">Treehouse Techdegree</a> [watch][$]</li>
-<li><a href="https://mijingo.com/products/bundles/front-end-dev-mastery/" target="_blank">Front-End Dev Mastery</a> [watch][$]</li>
 <li><a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank">Front-End Web Developer Nanodegree</a> [watch][$]</li>
-<li><a href="https://frontendmasters.com/courses/full-stack/" target="_blank">Full Stack for Front End Engineers</a> [$]</li>
 <li><a href="https://www.lynda.com/learning-paths/Web/become-a-front-end-web-developer" target="_blank">Become a Front-End Web Developer</a> [watch][$]</li>
 <li><a href="https://learn.freecodecamp.org/" target="_blank">freeCodeCamp</a> [interactive][watch]</li>
 </ul>
 
-<p>When getting your start, you should fear most things that conceal complexity. Abstractions in the wrong hands can give the appearance of advanced skills, while all the time hiding the fact that a developer has an inferior understanding of the basics or underlying concepts.</p>
+<p>When getting your start, you should fear most things that conceal complexity. Abstractions (e.g. jQuery) in the wrong hands can give the appearance of advanced skills, while all the time hiding the fact that a developer has an inferior understanding of the basics or underlying concepts.</p>
 <p>It is assumed that on this journey you are not only learning, but also doing as you learn and investigate tools. Some suggest only doing to learn. While others suggest only learning about doing. I suggest you find a mix of both that matches how your brain works and do that. But, for sure, it is a mix! So, don't just read about it, do it. Learn, do. Learn, do. Repeat indefinitely because things change fast. This is why learning the fundamentals, and not abstractions, are so important.</p>
 
 
           <h3>2.2 - Front-End Job Titles</h3>
 
-          <p><a href="https://css-tricks.com/the-great-divide/">A great divide has been brewing in the front-end developer space for several years between two very different types of so called front-end developers</a>. On the one side you have JavaScript focused programmers who write JavaScript for front-end runtimes that likely have computer science skills with a software development history. They more than likely view HTML and CSS as an abstraction (i.e. JSX and CSS in JS). On the other side you have, most likely, non-computer science educated developers who focus on HTML, CSS, and JavaScript as it specifically pertains to the UI. In 2019, when entering or trying to the understand the front-end developer space you will absolutely feel this divide. The term front-end developer is on the verge of meaninglessness without clarifying words to address what type of front-end developer is being discussed.</p>
+          <p><a href="https://css-tricks.com/the-great-divide/">A great divide has been brewing in the front-end developer space for several years between two very different types of so called front-end developers</a>. On the one side you have JavaScript focused programmers who write JavaScript for front-end runtimes that likely have computer science skills with a software development history. They more than likely view HTML and CSS as an abstraction (i.e. <a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a> and <a href="https://hackernoon.com/all-you-need-to-know-about-css-in-js-984a72d48ebc">CSS in JS</a>). On the other side you have, most likely, non-computer science educated developers who focus on HTML, CSS, and JavaScript as it specifically pertains to the UI. In 2019, when entering or trying to the understand the front-end developer space you will absolutely feel this divide. The term front-end developer is on the verge of meaninglessness without clarifying words to address what type of front-end developer is being discussed.</p>
 
           <p>
             Below is a list and description of various front-end job titles (Keep in mind titles are <a href="https://blog.prototypr.io/dissecting-front-end-job-titles-7f72a0ef0bc5">hard</a>). The
@@ -751,9 +745,6 @@
 <li>Database Administrators</li>
 <li>QA Engineers / Testers</li>
 </ul>
-<hr>
-<h6 id="notes">NOTES:</h6>
-<p>A small trend seems to be occurring where a, "full-stack developer" takes on the responsibilities on both the front-end and back-end.</p>
                                 
   <h3>2.7 - Generalist/Full-Stack Myth</h3>
 <p><img src="assets/images/full-stack.jpg" alt="" title="http://andyshora.com/full-stack-developers.html"></p>
@@ -838,7 +829,7 @@
   </ol>
 </div>
 
-<h3>2.10 - Front-End Communities</h3>
+<h3>2.11 - Front-End Communities</h3>
 
 <ul>
   <li><a href="http://fedsonslack.com" target="_blank">http://fedsonslack.com/</a></li>
@@ -1045,7 +1036,6 @@
 <li><a href="http://freecodecamp.com/" target="_blank">freeCodeCamp</a> [interact]
   <ul><li><a href="https://github.com/nas5w/100-days-of-code-frontend#contibuting" target="_blank">learning front-end development during #100DaysOfCode [read]</a></li></ul>
 </li>
-<li><a href="https://mijingo.com/products/bundles/front-end-dev-mastery/" target="_blank">Front-End Dev Mastery</a> [watch][$]</li>
 <li><a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank">Front-End Web Developer Nanodegree</a> [watch][$]</li>
 <li><a href="http://www.pluralsight.com/courses/front-end-web-development-career-kickstart" target="_blank">Front End Web Development Career Kickstart</a> [watch][$]</li>
 <li><a href="http://www.pluralsight.com/courses/front-end-web-development-get-started" target="_blank">Front End Web Development: Get Started</a> [watch][$]</li>
@@ -1294,7 +1284,7 @@
 <li><a href="https://tylermcginnis.com/javascript-visualizer/" target="_blank">JavaScript Visualizer</a></li>
 </ul>
 
-<h3>3.11 - Learn DOM, BOM, &amp; jQuery</h3>
+<h3>3.11 - Learn DOM, BOM, CSSOM &amp; jQuery</h3>
 <blockquote>
 <p><strong>DOM</strong> - The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents. The nodes of every document are organized in a tree structure, called the DOM tree. Objects in the DOM tree may be addressed and manipulated by using methods on the objects. The public interface of a DOM is specified in its application programming interface (API).</p>
 <p><cite>— <a href="https://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">Wikipedia</a></cite></p>
@@ -1334,6 +1324,7 @@
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank">MDN Document Object Model</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">MDN Event reference</a></li>
 <li><a href="https://msdn.microsoft.com/en-us/library/hh772384%28v=vs.85%29.aspx" target="_blank">MSDN Document Object Model (DOM)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model" target="_blank">CSS Object Model (CSSOM)</a></li>
 </ul>
 <h4>Standards/Specifications:</h4>
 <ul>
@@ -3434,7 +3425,7 @@
             </li>
             <li><a href="https://prepack.io/">Prepack</a> will continue to cook.</li>
             <li>GraphQL will continue to gain massive adoption.</li>
-            <li>The, "State of JavaScript" survey authors will add a "<a href="https://stateofcss.com/">State of CSS</a>" survey in 2019.</li>
+            <li>The, "<a href="https://stateofjs.com/">State of JavaScript</a>" survey authors will add a "<a href="https://stateofcss.com/">State of CSS</a>" survey in 2019.</li>
             <li><a href="https://prepack.io/">Prepack</a> will continue to cook.</li>
             <li>Keep an eye on <a href="https://caniuse.com/#feat=web-animation">Web Animations API</a>.</li>
             <li>Someone you know will try and convince you to use TypeScript.</li>
