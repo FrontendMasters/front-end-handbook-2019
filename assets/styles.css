@@ -10,7 +10,7 @@ p cite {
 }
 
 #panel a:link {
-    background-color: rgba(187, 239, 253, 0.3);
+    background-color: #fdefe8;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     color: #1a1a1a;
 }
@@ -20,7 +20,7 @@ p cite {
 }
 
 #panel a:hover {
-    background-color: #bbeffd;
+    background-color: #fcdcce;
     border-bottom-color: #1a1a1a;
 }
 
@@ -92,8 +92,8 @@ code {
 }
 
 .notes {
-    background-color: rgba(255, 229, 100, 0.3);
-    border-left-color: #ffe564;
+    background-color: #f6e1d7;
+    border-left-color: #e66225;
     border-left-width: 9px;
     border-left-style: solid;
     padding: 20px 45px 20px 26px;
@@ -152,7 +152,7 @@ hr {
     -webkit-overflow-scrolling: touch;
     z-index: 0;
     display: none;
-    background-color: #ececec;
+    background-color: #272727;
 }
 
 .slideout-menu-left {
@@ -203,14 +203,15 @@ hr {
 
 #toc a:focus,
 #toc a:hover {
-    background-color: #bbeffd;
-    border-bottom-color: #1a1a1a;
+    background-color: #000000;
+    border-bottom-color: #fff;
+    text-decoration: underline;
 }
 
 #toc a:link,
 #toc a:active,
 #toc a:visited {
-    color: #000;
+    color: #e7e7e7;
 }
 
 #toc h6 {
@@ -223,6 +224,7 @@ hr {
     margin-top: 30px;
     margin-bottom: 20px;
     line-height: 1.6em;
+    font-size: 14pt;
 }
 
 p+div.code-toolbar {
@@ -263,7 +265,7 @@ blockquote {
     font-style: italic;
     color: #555555;
     padding: 1.2em 30px 1.2em 75px;
-    border-left: 8px solid #78c0a8;
+    border-left: 8px solid #c02d28;
     line-height: 1.6;
     position: relative;
     background: #ededed;
@@ -273,7 +275,7 @@ blockquote {
 blockquote::before {
     font-family: Arial;
     content: "\201C";
-    color: #78c0a8;
+    color: #c02d28;
     font-size: 4em;
     position: absolute;
     left: 10px;
