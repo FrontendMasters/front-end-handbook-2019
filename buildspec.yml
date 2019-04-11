@@ -1,6 +1,6 @@
 version: 0.1
 
-meta : |
+meta: |
   AWS CodeBuild buildspec.yml
   The dependencies are downloaded and the binary built outside of the GOPATH.
   This requies special consideration is necessary. GOROOT is not set by default.
@@ -16,6 +16,7 @@ environment_variables:
 phases:
   pre_build:
     commands:
+      - echo PreBuild started on `date`
   build:
     commands:
       - echo Build started on `date`
@@ -28,6 +29,7 @@ phases:
 artifacts:
   type: zip
   files:
-    - */**
+    - assets/**/*
+    - index.html
     - appspec.yml
   discard-paths: no
