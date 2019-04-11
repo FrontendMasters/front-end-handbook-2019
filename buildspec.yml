@@ -1,0 +1,33 @@
+version: 0.1
+
+meta : |
+  AWS CodeBuild buildspec.yml
+  The dependencies are downloaded and the binary built outside of the GOPATH.
+  This requies special consideration is necessary. GOROOT is not set by default.
+  GOPATH is set to /go. GOBIN is necessary for the prebuild go get phase.
+  The repo source must be installed to the GOPATH.
+
+environment_variables:
+  plaintext:
+    PHASE: "build"
+    PROJECT: "feh-2019"
+    AWS_DEFAULT_REGION: "us-west-2"
+
+phases:
+  pre_build:
+    commands:
+  build:
+    commands:
+      - echo Build started on `date`
+
+  post_build:
+    commands:
+      - echo build completed started on `date`
+      - mv open-in-web-browser.html index.html
+
+artifacts:
+  type: zip
+  files:
+    - */**
+    - appspec.yml
+  discard-paths: no
