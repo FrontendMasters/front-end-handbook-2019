@@ -297,12 +297,14 @@ blockquote span {
 table {
     border-collapse: collapse;
     width: 100%;
+    max-width: 100%;
     margin: 30px 0 0 0;
 }
 
 th,
 td {
-    padding: 1rem;
+    line-height: 130%;
+    padding: 0.5rem;
     text-align: left;
     border: 1px solid #ccc;
 }
