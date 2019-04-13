@@ -18,11 +18,7 @@ The intention is to release an update to the content yearly.
 
 **Read Online**:
 
--
-
-**Contribute content, suggestions, and fixes on github**:
-
-- [https://github.com/FrontendMasters/front-end-handbook-2019](https://github.com/FrontendMasters/front-end-handbook-2019)
+- [https://frontendmasters.com/books/front-end-handbook/2019/](https://frontendmasters.com/books/front-end-handbook/2019/)
 
 ---
 
