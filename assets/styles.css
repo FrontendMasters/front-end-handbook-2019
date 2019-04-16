@@ -10,6 +10,12 @@ p cite {
     display: block;
 }
 
+@media (max-width: 1036px) {
+  #panel {
+      min-width: 100%;
+  }
+}
+
 #panel a:link {
     background-color: #fdefe8;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
