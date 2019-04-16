@@ -5353,6 +5353,11 @@
            slideout.toggle();
          });
 
+       // restore slideout state after clicking nav link
+       jQuery("#menu").on("click", "a[href^='#']", function() {
+         actualResizeHandler();
+       });
+
        // toggle TOC on window resize
        window.addEventListener("resize", resizeThrottler, false);
        var resizeTimeout;
