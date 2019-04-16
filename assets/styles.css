@@ -196,12 +196,16 @@ hr {
 }
 
 #menuButton {
-    position: sticky;
-    top: 15px;
-    left: 15px;
-    width: 30px;
-    height: 30px;
+    background: radial-gradient(closest-side, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     cursor: pointer;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 2;
 }
 
 #toc {
