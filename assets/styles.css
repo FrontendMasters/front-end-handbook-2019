@@ -324,3 +324,41 @@ td {
 tbody tr:nth-child(odd) {
     background: #eee;
 }
+
+/* Print styles */
+@media print {
+    body {
+        padding: 12pt;
+    }
+
+    hr {
+        margin: 20pt 0;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    .slideout-menu {
+        overflow-y: hidden;
+        position: static;
+        width: auto;
+    }
+
+    .slideout-open .slideout-panel {
+        margin: 0;
+        transform: none !important;
+    }
+
+    #bookPadding {
+        margin: 0;
+        max-width: none;
+        padding: 0;
+        width: auto;
+    }
+
+    #bookPadding img {
+        display: block;
+        margin: 0 auto;
+    }
+}
