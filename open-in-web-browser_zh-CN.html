@@ -47,7 +47,7 @@
       <h1>2019前端开发人员手册</h1>
       <h3 style="margin-top:0px"><a id="Written_by_Cody_Lindleyhttpcodylindleycom_3"></a>作者:<a href="http://codylindley.com/">Cody Lindley</a></h3>
       <section>
-        <p><em>由<a href="https://frontendmasters.com/">Frontend Masters</a>赞助, 通过深入的现代前端开发课程提升您的技能</em></p>
+        <p><em>由<a href="https://frontendmasters.com/">Frontend Masters</a>赞助， 通过深入的现代前端开发课程提升您的技能</em></p>
       </section>
       <hr>
       <h3>概述:</h3>
@@ -60,133 +60,133 @@
       <p><strong>手册内容知多少</strong>:</p>
       <p>序章 <a href="#0">0</a> 提供了前端开发的年度精简回顾以及即将到来或发生的事情。 章节 <a href="#1">1</a> & <a href="#2">2</a> 旨在简要概述前端知识的开发和实践。 章节 <a href="#3">3</a> & <a href="#4">4</a> 推荐汇总学习路径和资源。 章节 <a href="#5">5</a> 汇总列出前端开发人员使用的工具。 章节 <a href="#6">6</a> 突出的前端信息渠道。</p>
       <hr>
-      <p><strong>可以在Github上提供新内容，建议和修复</strong>:</p>
+      <p><strong>欢迎在Github上提供新内容，建议和修复</strong>:</p>
       <p><a href="https://github.com/FrontendMasters/front-end-handbook-2019">https://github.com/FrontendMasters/front-end-handbook-2019</a></p>
       <hr>
       <div class="chapter" id="chapter0">
         <h2>序章 0. 回顾2018以及展望未来</h2>
         <h3>0.1 &mdash; 回顾2018年的前端发展</h3>
         <ul>
-          <li>React had several notable releases this past year that included, <a href="https://reactjs.org/blog/2018/03/29/react-v-16-3.html#component-lifecycle-changes">lifecycle methods</a>, <a href="https://reactjs.org/blog/2018/03/29/react-v-16-3.html#official-context-api">context API</a>, <a href="https://reactjs.org/docs/react-api.html#reactsuspense">suspense</a>, and <a href="https://reactjs.org/docs/hooks-intro.html">React hooks</a>.
+          <li>React去年有几个值得注意的发布，其中包括 <a href="https://reactjs.org/blog/2018/03/29/react-v-16-3.html#component-lifecycle-changes">生命周期方法</a>， <a href="https://reactjs.org/blog/2018/03/29/react-v-16-3.html#official-context-api">上下文API</a>， <a href="https://reactjs.org/docs/react-api.html#reactsuspense">suspense</a>和 <a href="https://reactjs.org/docs/hooks-intro.html">React hooks</a>.
           </li>
           <li>
-            <a href="https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/">Microsoft buys Github</a>. Yeah, that happened.
+            <a href="https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/">微软收购Github</a>。 是的，这已经发生了。
           </li>
-          <li>Fonts created by CSS became a <a href="https://yusugomori.com/projects/css-sans/">thing</a>.
+          <li>仅用<a href="https://yusugomori.com/projects/css-sans/">CSS描绘Fonts</a>成为现实。
           </li>
-          <li>What I used to call front-end driven apps, gets labeled <a href="https://thepowerofserverless.info/">"serverless"</a>. Unfortunately, this term is <a href="owler.com/articles/serverless.html">overloaded</a>. However, the term <a href="https://jamstack.org/">JAMstack</a> does seem to be <a href="https://jamstackconf.com/nyc/">resonating</a> with developers.
+          <li>过去称之为前端驱动的应用程序，被称呼为<a href="https://thepowerofserverless.info/">"serverless"</a>。 不过，这个术语<a href="owler.com/articles/serverless.html">serverless</a>已经不再适应了。 现在，<a href="https://jamstack.org/">JAMstack</a>似乎更被开发者们所<a href="https://jamstackconf.com/nyc/">认同</a>。
           </li>
-          <li>Google offered some neat tools this year to help make webpages load faster, i.e. <a href="https://github.com/GoogleChromeLabs/squoosh/">squoosh</a> and <a href="https://github.com/GoogleChromeLabs/quicklink">quicklink</a>.
-          </li>
-          <li>
-            <a href="https://risingstars.js.org/2018/en/#section-framework">Vue gets</a> more <a href="https://hasvuepassedreactyet.surge.sh/">Github stars</a> than React this year. But React remains dominate in <a href="https://2018.stateofjs.com/front-end-frameworks/overview/">terms</a> of <a href="https://www.npmjs.com/browse/depended">use</a>.
-          </li>
-          <li>A solution similar to React, without a virtual DOM or JSX, is introduced <a href="https://github.com/redom/redom">RE:DOM</a>.
-          </li>
-          <li>Alternatives to NW.js and Electron show up, <a href="https://deskgap.com/">DeskGap</a> and <a href="https://neutralino.js.org/">Neutralino.js</a>.
-          </li>
-          <li>In 2017 the <a href="https://medium.com/@jerrylowm/the-death-of-front-end-developers-803a95e0f411" target="_blank">great</a> divide between a <a href="https://medium.com/@mandy.michael/is-there-any-value-in-people-who-cannot-write-javascript-d0a66b16de06">front-end HTML &amp; CSS developer</a> v.s. <a href="https://medium.com/@mandy.michael/is-there-any-value-in-people-who-cannot-write-javascript-d0a66b16de06" target="_blank">front-end application developer is realized/verbalized</a>. In 2018 that <a href="https://css-tricks.com/the-great-divide/">divide has grown wider and deeper</a> and more <a href="https://rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/">people</a> start to <a href="https://hackernoon.com/the-backendification-of-frontend-development-62f218a773d4">feel</a> <a href="http://bradfrost.com/blog/post/big-ol-ball-o-javascript/">the</a> <a href="https://justmarkup.com/log/2018/11/just-markup/">divide</a>.
-          </li>
-          <li>This year, like most recent years, was stock full of app/framework solutions trying to contend with the mainstream JavaScript app tools (i.e. <a href="https://stateofjs.com/2017/front-end/results" target="_blank">React, Angular, and Vue etc...</a>) Let me list them for you. <a href="https://radi.js.org/">Radi.js</a>, <a href="https://display.js.org/">DisplayJS</a>, <a href="https://stimulusjs.org/">Stimulus</a>, <a href="https://github.com/Tencent/omi">Omi</a>, <a href="https://quasar-framework.org">Quasar</a>.
-          </li>
-          <li>JavaScript frameworks start offering their own languages that compile to JavaScript (e.g. <a href="https://www.mint-lang.com/">Mint</a>).
+          <li>谷歌今年提供了一些简洁的工具，以帮助加快网页加载速度，即<a href="https://github.com/GoogleChromeLabs/squoosh/">squoosh</a> 和 <a href="https://github.com/GoogleChromeLabs/quicklink">quicklink</a>。
           </li>
           <li>
-            <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a> evolves to become the dominant solution for online code sharing.
+            今年 <a href="https://risingstars.js.org/2018/en/#section-framework">Vue</a> 获得的 <a href="https://hasvuepassedreactyet.surge.sh/">Github stars</a> 已经超过了 React。 但是 React 在<a href="https://2018.stateofjs.com/front-end-frameworks/overview/">使用方面</a>仍占据<a href="https://www.npmjs.com/browse/depended">主导地位</a>。
+          </li>
+          <li><a href="https://github.com/redom/redom">RE:DOM</a>是类似于React的解决方案，没有虚拟DOM或JSX。
+          </li>
+          <li>NW.js 和 Electron 的替代品出现，<a href="https://deskgap.com/">DeskGap</a> 和 <a href="https://neutralino.js.org/">Neutralino.js</a>.
+          </li>
+          <li>2017年前端<a href="https://medium.com/@mandy.michael/is-there-any-value-in-people-who-cannot-write-javascript-d0a66b16de06">HTML和CSS开发人员</a>与<a href="https://medium.com/@mandy.michael/is-there-any-value-in-people-who-cannot-write-javascript-d0a66b16de06" target="_blank">前端应用程序开发人员</a>之间存在着实现/语言化方面的<a href="https://medium.com/@jerrylowm/the-death-of-front-end-developers-803a95e0f411" target="_blank">巨大鸿沟</a>。 在2018年，这种<a href="https://css-tricks.com/the-great-divide/">分歧</a>越来越大，<a href="https://rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/">越来越多</a>的人开始<a href="https://hackernoon.com/the-backendification-of-frontend-development-62f218a773d4">感受</a>到 <a href="http://bradfrost.com/blog/post/big-ol-ball-o-javascript/">这种</a><a href="https://justmarkup.com/log/2018/11/just-markup/">鸿沟</a>。
+          </li>
+          <li>像最近几年一样，今年充满了尝试与主流JavaScript应用工具竞争的应用/框架解决方案（即<a href="https://stateofjs.com/2017/front-end/results" target="_blank">React，Angular 和 Vue 等......</a>) 让我为你列出它们：<a href="https://radi.js.org/">Radi.js</a>， <a href="https://display.js.org/">DisplayJS</a>， <a href="https://stimulusjs.org/">Stimulus</a>， <a href="https://github.com/Tencent/omi">Omi</a>， <a href="https://quasar-framework.org">Quasar</a>。
+          </li>
+          <li>JavaScript框架开始提供自己编译为JavaScript的语言（例如<a href="https://www.mint-lang.com/">Mint</a>)。
           </li>
           <li>
-            <a href="https://cssgridgarden.com/">CSS Grid</a> and <a href="https://flexboxfroggy.com/">CSS Flexbox</a> are fully supported in modern browsers and get taken for some serious rides. But many are left <a href="https://www.youtube.com/watch?v=hs3piaN4b5I">wondering</a> when to <a href="https://css-irl.info/to-grid-or-to-flex/">use which one and how</a>.
+            <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a> 发展成为在线代码共享的主要解决方案。
           </li>
           <li>
-						Many realize the long terms costs of bolted on type systems (e.g. TypeScript and Flow). Some concluded bolted on systems are not unlike bolted on module systems (i.e. AMD/Require.js) and come with <a href="https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b">more issues than solutions</a>. Minimally, many developers realize that if types are needed in large code bases, that bolted on systems are not ideal in comparison to languages that have them baked in (e.g. <a href="https://reasonml.github.io/">Reason</a>, <a href="http://www.purescript.org/">Purescript</a>, <a href="https://elm-lang.org/">Elm</a>).
+            <a href="https://cssgridgarden.com/">CSS Grid</a> 和 <a href="https://flexboxfroggy.com/">CSS Flexbox</a> 在现代浏览器中得到完全支持，并且可以用于一些严格场景。但许多人 <a href="https://www.youtube.com/watch?v=hs3piaN4b5I">不知道</a>何时<a href="https://css-irl.info/to-grid-or-to-flex/"></a>使用哪一个以及如何使用</a>。
+          </li>
+          <li>
+						许多人意识到类型连接系统的长期成本（例如TypeScript和Flow）。 这些系统实际上和模块连接系统(即 AMD/Require.js)并无什么不同，甚至可能会<a href="https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b">遇到更多的问题</a>. 最后, 许多开发人员意识到，如果在大型代码库中需要类型，那么与其中包含它们的语言(例如 <a href="https://reasonml.github.io/">Reason</a>， <a href="http://www.purescript.org/">Purescript</a>， <a href="https://elm-lang.org/">Elm</a>)相比，结果并不理想。
 					</li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">CSS Variables</a> gain <a href="https://caniuse.com/#feat=css-variables">browser support</a> among modern web browsers
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">CSS 变量</a>在现代Web浏览器中获得<a href="https://caniuse.com/#feat=css-variables">支持</a>。
           </li>
-          <li>The flavors of <a href="http://michelebertoli.github.io/css-in-js/">CSS in JS</a> exploded and <a href="http://bradfrost.com/blog/link/whats-wrong-with-css-in-js/">some</a> question the practice.
-          </li>
-          <li>
-            <a href="https://caniuse.com/#search=modules">ES modules</a> are now usable in modern browsers and <a href="https://developers.google.com/web/updates/2017/11/dynamic-import#dynamic">dynamic imports</a> are close behind. We are even seeing a shift in <a href="https://www.pikapkg.com/blog/introducing-pika-pack/">tooling</a> around this fact.
-          </li>
-          <li>Many realize that end to end testing is the starting point of doing tests correctly in large part due to <a href="https://www.cypress.io/how-it-works/" target="_blank">Cypress</a> (i.e. Cypress first, then <a href="https://jestjs.io/">Jest</a>).
-          </li>
-          <li>While <a href="https://webpack.js.org/" target="_blank">Webpack</a> was heavily used again this year, many developers found <a href="https://github.com/parcel-bundler/parcel" target="_blank">Parcel</a> to be easier to get up and running.
-          </li>
-          <li>One of the most important questions asked this year was, what is the <a href="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">cost of JavaScript</a>.
+          <li><a href="http://michelebertoli.github.io/css-in-js/">在JS中写CSS</a>的扩展受到很多<a href="http://bradfrost.com/blog/link/whats-wrong-with-css-in-js/">质疑</a>。
           </li>
           <li>
-            <a href="https://babeljs.io/blog/2018/08/27/7.0.0">Babel 7 was released this year</a>. That's a big deal because the last major release was almost three years ago.
+            <a href="https://caniuse.com/#search=modules">ES modules</a> 用于现代浏览器，实现<a href="https://developers.google.com/web/updates/2017/11/dynamic-import#dynamic">动态引入</a>。 我们能看到围绕这一现实<a href="https://www.pikapkg.com/blog/introducing-pika-pack/">工具的转变</a>。
           </li>
-          <li>The reality of too much JavaScript change too fast is realized and people start <a href="https://www.robinwieruch.de/javascript-fundamentals-react-requirements/">talking</a> about what you need to know before you can even learn something like React. The fight is real.
+          <li>许多人意识到端到端正确进行测试的起点在很大程度上基于<a href="https://www.cypress.io/how-it-works/" target="_blank">Cypress</a> (比如先是 Cypress ， 然后是 <a href="https://jestjs.io/">Jest</a>)。
           </li>
-          <li>Most developers found GraphQL, via <a href="https://www.apollographql.com/">Apollo</a>, and <a href="https://blog.bitsrc.io/why-does-everyone-love-graphql-17de7f99f05a">see it</a> as the next evolution for data API's.
+          <li>即使今年<a href="https://webpack.js.org/" target="_blank">Webpack</a>被大量使用， 但许多开发者认为 <a href="https://github.com/parcel-bundler/parcel" target="_blank">Parcel</a> 更容易启动和运行。
           </li>
-          <li>Gulp and friends definitely took a back seat to <a href="https://css-tricks.com/why-npm-scripts/">NPM/Yarn run</a>. But this did not stop Microsoft from getting in the game with <a href="https://github.com/Microsoft/just">Just</a>.
-          </li>
-          <li>This year, one can not only lint/hint HTML, CSS, and JavaScript they can <a href="https://webhint.io">lint/hint the web</a> itself.
-          </li>
-          <li>The <a href="https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018-results">2018 Front-End Tooling survey</a> is worth reading if only to realize just how much jQuery is still used.
-          </li>
-          <li>It <a href="https://2018.stateofjs.com/javascript-flavors/typescript/">can't be denied</a> <a href="https://www.typescriptlang.org/">TypeScript</a> gained a lot of users this year.
+          <li>今年提出的最重要问题之一是<a href="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">JavaScript的成本</a>是多少。
           </li>
           <li>
-            <a href="https://code.visualstudio.com/">VScode</a>, <a href="https://triplebyte.com/blog/editor-report-the-rise-of-visual-studio-code">dominates</a> as the code editor of choice.
+            <a href="https://babeljs.io/blog/2018/08/27/7.0.0">Babel 7 今年发布</a>。 这是一件大事，因为上一次主要版本是差不多三年前。
+          </li>
+          <li>JavaScript 发展变化太快的事实让人们开始<a href="https://www.robinwieruch.de/javascript-fundamentals-react-requirements/">讨论</a> 在你学习 JavaScript相关知识（比如 React）之前需要事先知晓掌握多少知识。现实很残酷。
+          </li>
+          <li>很多开发者通过<a href="https://www.apollographql.com/">Apollo</a>了解了 GraphQL, 并将其视为数据API的下一代 <a href="https://blog.bitsrc.io/why-does-everyone-love-graphql-17de7f99f05a">演进</a> 。
+          </li>
+          <li>Gulp 相关工具市场使用率已经退居 <a href="https://css-tricks.com/why-npm-scripts/">NPM/Yarn </a>之后，但是这并没有阻止微软的 <a href="https://github.com/Microsoft/just">Just</a> 加入竞争行列。
+          </li>
+          <li>今年，人们不仅可以通过网页检查 HTML, CSS, and JavaScript， 甚至可以 <a href="https://webhint.io">检查网页</a> 本身。
+          </li>
+          <li>2018年如果你想了解多少网页仍在使用 jQuery，那么<a href="https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018-results">2018前端工具调查</a>非常值得你阅读。
+          </li>
+          <li><a href="https://2018.stateofjs.com/javascript-flavors/typescript/">不可否认</a> <a href="https://www.typescriptlang.org/">TypeScript</a>今年获得了很多忠实用户。
+          </li>
+          <li>
+            <a href="https://code.visualstudio.com/">VScode</a>, 作为代码编辑器占据<a href="https://triplebyte.com/blog/editor-report-the-rise-of-visual-studio-code">主导地位</a>。
           </li>
         </ul>
-        <h3>0.2 &mdash; In 2019, Expect...</h3>
+        <h3>0.2 &mdash; 在2019年， 期望...</h3>
         <ul>
-          <li>Hopefully, more of this to come. "<a href="https://cathydutton.co.uk/posts/why-i-stopped-using-sass/">Stepping away from Sass</a>".
+          <li>希望“<a href="https://cathydutton.co.uk/posts/why-i-stopped-using-sass/">停止使用Sass</a>”能有更多的发展。
           </li>
-          <li>Still a good idea to keep an eye on and learn about the up coming additions (and potential additions) to CSS via <a href="https://cssdb.org/">https://cssdb.org</a>
+          <li>通过<a href="https://cssdb.org/">https://cssdb.org</a>密切关注并了解CSS的新增功能（和潜在的附加功能）是一个好主意。
           </li>
-          <li>The <a href="https://developers.google.com/speed/webp/">WebP</a> image format from Google could reach <a href="https://caniuse.com/#feat=webp">support from all modern browsers this year</a>.
-          </li>
-          <li>
-            <a href="https://prepack.io/">Prepack</a> will continue to cook.
+          <li>来自谷歌的<a href="https://developers.google.com/speed/webp/">WebP</a>图像格式可以在今年获得<a href="https://caniuse.com/#feat=webp">所有现代浏览器的支持</a>。
           </li>
           <li>
-            <a href="https://graphql.org/">GraphQL</a> will continue to gain massive adoption.
-          </li>
-          <li>The, "<a href="https://stateofjs.com/">State of JavaScript</a>" survey authors will add a "<a href="https://stateofcss.com/">State of CSS</a>" survey in 2019.
-          </li>
-          <li>Keep an eye on <a href="https://caniuse.com/#feat=web-animation">Web Animations API</a>.
-          </li>
-          <li>Someone you know will try and convince you to use <a href="https://www.typescriptlang.org/">TypeScript</a>.
-          </li>
-          <li>Babel will get some competition from <a href="https://github.com/swc-project/swc">swc-project</a>.
-          </li>
-          <li>The case for, <a href="https://jamstack.org/">JAMStack</a>'s will <a href="https://jamstackconf.com/nyc/">continue</a>.
+            <a href="https://prepack.io/">Prepack</a>高速发展中。
           </li>
           <li>
-            <a href="https://quasar-framework.org">Chasing the one code base to many platforms will continue.</a>
+            <a href="https://graphql.org/">GraphQL</a>将继续获得大量采用。
           </li>
-          <li>More developers will turn to languages like <a href="https://www.imaginarycloud.com/blog/reasonml-react-as-first-intended/">ReasonML</a> over JavaScript/TypeScript for large code bases.
+          <li>“<a href="https://stateofjs.com/">State of JavaScript</a>”调查作者将在2019年增加一个“<a href="https://stateofcss.com/">State of CSS</a>”调查。
           </li>
-          <li>More, <a href="https://github.com/twbs/bootstrap/pull/23586">largely used projects</a> will start to shed jQuery in favor of native DOM solutions.
+          <li>密切关注<a href="https://caniuse.com/#feat=web-animation">Web Animations API</a>.
+          </li>
+          <li>你认识的人会试图说服你使用<a href="https://www.typescriptlang.org/">TypeScript</a>。
+          </li>
+          <li>Babel 将会和<a href="https://github.com/swc-project/swc">swc-project</a>展开一些竞争。
+          </li>
+          <li><a href="https://jamstack.org/">JAMStack</a>案例将<a href="https://jamstackconf.com/nyc/">持续发展</a>。
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a>! At this point, I have no idea how Web Components will play out. Reality is they are not going away, and they have not gained a lot of momentum/usage once the hype ended.
+            <a href="https://quasar-framework.org">将一个代码库发布到许多平台将继续发展。</a>
+          </li>
+          <li>对于大型代码库，更多的开发人员将转向使用<a href="https://www.imaginarycloud.com/blog/reasonml-react-as-first-intended/">ReasonML</a>而不是JavaScript / TypeScript的语言。
+          </li>
+          <li>更多的<a href="https://github.com/twbs/bootstrap/pull/23586">大型项目</a>开始放弃jQuery，转而支持原生DOM解决方案。
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a>! 此时，我不知道Web Components将如何发挥作用。 现实是他们不会消失，一旦炒作结束，他们就没有获得很多动力/用法。
           </li>
         </ul>
       </div>
       <hr>
       <div class="chapter" id="chapter1">
-        <h2>Chapter 1. What Is a Front-end Developer?</h2>
+        <h2>章节 1. 什么是前端开发人员？</h2>
         <section class="sub">
-          <p>This chapter provides a baseline explanation for front-end development and the front-end developer discipline.</p>
+          <p>本章提供了前端开发和前端开发人员发展的时间线说明。</p>
         </section>
         <blockquote>
-          <p>Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.</p>
-          <p>The objective of designing a site is to ensure that when the users open up the site they see the information in a format that is easy to read and relevant. This is further complicated by the fact that users now use a large variety of devices with varying screen sizes and resolutions thus forcing the designer to take into consideration these aspects when designing the site. They need to ensure that their site comes up correctly in different browsers (cross-browser), different operating systems (cross-platform) and different devices (cross-device), which requires careful planning on the side of the developer.</p>
+          <p>前端Web开发（也称为客户端开发）是为网站或Web应用程序生成HTML，CSS和JavaScript的实践，以便用户可以直接查看和与之交互。 与前端开发相关的挑战是，用于创建网站前端的工具和技术不断变化，因此开发人员需要不断了解该领域的发展方式。</p>
+          <p>设计网站的目的是确保当用户打开网站时，他们会以易于阅读和正确的相关格式查看信息。 由于用户现在使用具有不同屏幕尺寸和分辨率的各种设备，因此迫使设计者在设计场地时考虑这些方面，这使事情变得更加复杂。 他们需要确保他们的网站在不同的浏览器（跨浏览器），不同的操作系统（跨平台）和不同的设备（跨设备）中正确显示，这需要在开发人员方面进行仔细的规划。</p>
           <p><cite><a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank">https://en.wikipedia.org/wiki/Front-end_web_development</a></cite></p>
         </blockquote>
         <p><img alt="" src="./assets/images/what-is-front-end-dev.png" title="https://www.upwork.com/hiring/development/front-end-developer/"> <cite>Image source: <a href="https://www.upwork.com/hiring/development/front-end-developer/" target="_blank">https://www.upwork.com/hiring/development/front-end-developer/</a></cite></p>
-        <h4 id="html-css--javascript">A Front-end Developer...</h4>
-        <p>A front-end developer architects and develops websites and web applications using web technologies (i.e., <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>), which typically runs on the <a href="https://en.wikipedia.org/wiki/Open_Web_Platform" target="_blank">Open Web Platform</a> or acts as compilation input for non-web platform environments (i.e., <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>).</p>
-        <p>A person enters into the field of front-end development by learning to build a website or web application which relies on HTML, CSS, and JavaScript and commonly runs in a <a href="https://en.wikipedia.org/wiki/Web_browser" target="_blank">web browser</a> but can also run in a <a href="https://en.wikipedia.org/wiki/Headless_browser" target="_blank">headless browser</a>, <a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">WebView</a>, or as compilation input for a native runtime environment. These four run times scenarios are explained below.</p>
-        <p><strong>Web Browsers (most common)</strong></p>
-        <p>A web browser is software used to retrieve, present, and traverse information on the <a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank">WWW</a>. Typically, browsers run on a desktop or laptop computer, tablet, or phone, but as of late a browser can be found on just about anything (i.e, on a fridge, in cars, etc.).</p>
-        <p>The most common web browsers are (shown in order of <a href="https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_tables" target="_blank">most used first</a>):</p>
+        <h4 id="html-css--javascript">一个前端开发者...</h4>
+        <p>前端开发人员使用Web技术（即<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>，和 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>）构建和开发网站和Web应用程序，这些技术通常在<a href="https://en.wikipedia.org/wiki/Open_Web_Platform" target="_blank">Open Web Platform</a>上运行或充当非Web平台环境的编译输入（即 <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>）。</p>
+        <p>一个人通过学习构建依赖于HTML，CSS和JavaScript的网站或Web应用程序进入前端开发领域，并且通常在<a href="https://en.wikipedia.org/wiki/Web_browser" target="_blank">web浏览</a> 中运行，但也可以在<a href="https://en.wikipedia.org/wiki/Headless_browser" target="_blank">无头浏览器</a>, <a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">WebView</a>或本机运行时环境编译中运行。 下面解释这四个运行时间场景。</p>
+        <p><strong>Web浏览器（最常见）</strong></p>
+        <p>Web浏览器是用于检索，呈现和遍历<a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank">WWW</a>上的信息的软件。 通常，浏览器在台式机或笔记本电脑，平板电脑或手机上运行，但最近几乎可以在任何东西上找到浏览器（例如，在冰箱，汽车等）。</p>
+        <p>最常见的Web浏览器（<a href="https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Summary_tables" target="_blank">按照最常用的顺序显示</a>）：</p>
         <ul>
           <li>
             <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>
@@ -195,7 +195,7 @@
             <a href="http://www.apple.com/safari/" target="_blank">Safari</a>
           </li>
           <li>
-            <a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank">Internet Explorer</a> (Note: not <a href="http://dev.modern.ie/" target="_blank">Edge</a>, referring to IE 9 to IE 11)
+            <a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank">Internet Explorer</a> (注意：不是<a href="http://dev.modern.ie/" target="_blank">Edge</a>，指的是IE 9到IE 11)
           </li>
           <li>
             <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>
@@ -204,9 +204,9 @@
             <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Edge</a>
           </li>
         </ul>
-        <p><strong>Headless Browsers</strong></p>
-        <p>Headless browsers are a web browser <strong>without</strong> a graphical user interface that can be controlled from a command line interface programmatically for the purpose of web page automation (e.g., functional testing, scraping, unit testing, etc.). Think of headless browsers as a browser that you can run programmatically from the command line that can retrieve and traverse web page code.</p>
-        <p>The most common headless browsers are:</p>
+        <p><strong>无头浏览器</strong></p>
+        <p>无头浏览器是<strong>没有</strong>图形用户界面的网络浏览器，可以从命令行界面以编程方式控制该网络浏览器以用于网页自动化（例如，功能测试，抓取，单元测试等）。 将无头浏览器视为可以从命令行以编程方式运行的浏览器，该命令行可以检索和遍历网页代码。</p>
+        <p>最常见的无头浏览器是：</p>
         <ul>
           <li>
             <a href="https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md" target="_blank">Headless Chromium</a>
@@ -222,22 +222,22 @@
 					</li>
         </ul>
         <p><strong>Webviews</strong></p>
-        <p><a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">Webviews</a> are used by a native OS, in a native application, to run web pages. Think of a <a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">webview</a> like an iframe or a single tab from a web browser that is embedded in a native application running on a device (e.g., <a href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIWebView_Class/" target="_blank">iOS</a>, <a href="http://developer.android.com/reference/android/webkit/WebView.html" target="_blank">android</a>, <a href="https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx" target="_blank">windows</a>).</p>
-        <p>The most common solutions for <a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">webview</a> development are:</p>
+        <p><a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">Webviews</a>由本机操作系统（在本机应用程序中）用于运行网页。可以想象一个像iframe的<a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">webview</a>或来自web浏览器的单个选项卡，它嵌入在设备上运行的本机应用程序中（例如， <a href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIWebView_Class/" target="_blank">iOS</a>， <a href="http://developer.android.com/reference/android/webkit/WebView.html" target="_blank">android</a>， <a href="https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx" target="_blank">windows</a>）。</p>
+        <p><a href="http://developer.telerik.com/featured/what-is-a-webview/" target="_blank">webview</a>开发最常用的解决方案是：</p>
         <ul>
           <li>
-            <a href="https://cordova.apache.org/" target="_blank">Cordova</a> (typically for native phone/tablet apps)
+            <a href="https://cordova.apache.org/" target="_blank">Cordova</a> （通常用于原生手机/平板电脑应用）
           </li>
           <li>
-            <a href="https://github.com/nwjs/nw.js" target="_blank">NW.js</a> (typically used for desktop apps)
+            <a href="https://github.com/nwjs/nw.js" target="_blank">NW.js</a> （通常用于桌面应用）
           </li>
           <li>
-            <a href="http://electron.atom.io/" target="_blank">Electron</a> (typically used for desktop apps)
+            <a href="http://electron.atom.io/" target="_blank">Electron</a> （通常用于桌面应用）
           </li>
         </ul>
-        <p><strong>Native from Web Tech</strong></p>
-        <p>Eventually, what is learned from web browser development can be used by front-end developers to craft code for environments that are not fueled by a browser engine (i.e. web platform). As of late, development environments are being dreamed up that use web technologies (e.g., CSS and JavaScript), without web engines, to create native applications.</p>
-        <p>Some examples of these environments are:</p>
+        <p><strong>Web Tech原生</strong></p>
+        <p>随着发展，前端开发人员可以使用从Web浏览器开发中学到的知识来为不受浏览器引擎（即Web平台）推动的环境制作代码。 最近，开发环境正在被设想为使用Web技术（例如，CSS和JavaScript）而没有Web引擎来创建本机应用程序。</p>
+        <p>这些开发环境的一些示例：</p>
         <ul>
           <li>
             <a href="https://flutter.io/" target="_blank">Flutter</a>
@@ -250,76 +250,76 @@
 					</li>
         </ul>
         <div class="notes">
-          <p><strong>Notes:</strong></p>
+          <p><strong>注意：</strong></p>
           <ol>
-            <li>Make sure you are clear what exactly is meant by the "web platform". Read the, <a href="https://en.wikipedia.org/wiki/Open_Web_Platform" target="_blank">"Open Web Platform"</a> Wikipedia page. Explore <a href="https://platform.html5.org/" target="_blank">the many technologies</a> that make up the web platform.
+            <li>确保您清楚“网络平台”的确切含义。 阅读“<a href="https://en.wikipedia.org/wiki/Open_Web_Platform" target="_blank">"开放Web平台"</a>”维基百科页面。 探索构成Web平台的众多<a href="https://platform.html5.org/" target="_blank">更多技术</a>。
             </li>
           </ol>
         </div>
       </div>
       <div class="chapter" id="chapter2">
-        <h2>Chapter 2. The Practice of Front-end Development: Overview</h2>
+        <h2>章节 2. 前端开发实践：概述</h2>
         <section class="sub">
-          <p>This chapter will break down and broadly describes the practice of front-end engineering starting with, "How Front-End Developers Are Made".</p>
+          <p>本章将分解并广泛地描述前端工程的实践，从“如何成为前端开发人员”开始。</p>
         </section>
-        <h3>2.1 - How Front-End Developers Are Made</h3>
-        <p>How exactly does one become a front-end developer? Well, it's complicated. Just consider this road map:</p>
+        <h3>2.1 - 如何成为前端开发人员</h3>
+        <p>如何成为前端开发人员？ 嗯，这很复杂。 试试这个路线图：</p>
         <p><img alt="" src="assets/images/frontend.png" title="https://github.com/kamranahmedse/developer-roadmap"></p>
-        <p><cite>Image source: <a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank">https://github.com/kamranahmedse/developer-roadmap</a></cite></p>
-        <p>Today, in general, one can't go to college and expect to graduate with a degree in front-end engineering. And, I rarely hear of or meet front-end developers who suffered through what is likely a deprecated computer science degree or graphic design degree to end up writing HTML, CSS, and JavaScript professionally. From my perspective, most of the people working on the front-end today generally seem to be self-taught from the ground up or cross over into the front-end space from design or computer science fields.</p>
-        <p>If you were to set out today to become a front-end developer I would loosely strive to follow the process outlined below (Chapter 3 and Chapter 4 will dive into more details on learning resources).</p>
+        <p><cite>图片来自： <a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank">https://github.com/kamranahmedse/developer-roadmap</a></cite></p>
+        <p>时至今日，似乎并没有大学开设了前端工程学位。而且我也很少听到或遇到前端开发人员经历了一个可能被否定蔑视的计算机科学学位或平面设计学位，最终选择专业地编写HTML，CSS和JavaScript。从我的角度来看，今天在前端工作的大多数人似乎从头开始自学，或者从设计或计算机科学领域跨越到前端开发工作领域。</p>
+        <p>今天如果您想要成为一名前端开发人员，我建议您努力了解下面概述的流程（第3章和第4章将深入探讨有关学习资源的更多细节）。</p>
         <ol>
-          <li>Learn, roughly, how the <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">web</a> <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work">platform</a> works. Make sure you know the "what" and "where" of <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">HTML, CSS, DOM, JavaScript, Domains, DNS, URLs, HTTP, browsers, and servers/hosting</a>. Don't dive deep on anything just yet, just aim to understand the parts at play and how they loosely fit together. Start by building simple web pages.
+          <li>大致了解一下<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">网络</a> <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work">平台</a>的工作原理。 确保您了解<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">HTML, CSS, DOM, JavaScript, 域名, DNS, URLs, HTTP, 浏览器和服务器</a>的内容和作用。暂时不要过于深入了解，只需要了解其中的组成部分以及它们如何松散地融合在一起工作的。 首先从构建简单的网页开始。
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">Learn HTML</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">学习 HTML</a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Learn CSS</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">学习 CSS</a>
           </li>
           <li>
-            <a href="https://youtu.be/QjKH1J77gjI?list=PL055Epbe6d5bQubu5EWf_kUNA3ef_qbmL" target="_blank">Learn JavaScript</a>
+            <a href="https://youtu.be/QjKH1J77gjI?list=PL055Epbe6d5bQubu5EWf_kUNA3ef_qbmL" target="_blank">学习 JavaScript</a>
           </li>
-          <li>Learn DOM</li>
-          <li>Learn the fundamentals of user interface design (i.e. UI patterns, interaction design, user experience design, and usability).</li>
-          <li>Learn CLI/command line</li>
-          <li>Learn the practice of software engineering (i.e., Application design/architecture, templates, Git, testing, monitoring, automating, code quality, development methodologies).</li>
-          <li>Get opinionated and customize your tool box with whatever makes sense to your brain (e.g. Webpack, React, and Mobx).</li>
-          <li>Learn Node.js</li>
+          <li>学习 DOM</li>
+          <li>了解用户界面设计的基础知识（即UI模式，交互设计，用户体验设计和可用性）。</li>
+          <li>学习 CLI/命令行</li>
+          <li>学习软件工程的实践（即应用程序设计/架构，模板，Git，测试，监控，自动化，代码质量，开发方法）。</li>
+          <li>根据您个人的喜好（例如Webpack，React和Mobx）对您的代码工具进行选择和定制。</li>
+          <li>学习 Node.js</li>
         </ol>
-        <p>A short word of advice on learning. <a href="https://youtu.be/QjKH1J77gjI?list=PL055Epbe6d5bQubu5EWf_kUNA3ef_qbmL" target="_blank">Learn the actual underlying technologies, before learning abstractions.</a> Don't learn jQuery, learn the DOM. Don't learn SASS, learn CSS. Don't learn JSX, learn HTML. Don't learn TypeScript, learn JavaScript. Don't learn Handlebars, learn JavaScript ES6 templates. Don't just use Bootstrap, learn UI patterns.</p>
-        <p>Lately a lot of non-accredited, expensive, front-end code schools/bootcamps have emerged. These avenues of becoming a front-end developer are typically teacher directed courses, that follow a more traditional style of learning, from an official instructor (i.e., syllabus, test, quizzes, projects, team projects, grades, etc.).</p>
-        <p>Keep in mind, if you are considering an expensive training program, this is the web! Everything you need to learn is on the web for the taking, costing little to nothing. However, if you need someone to tell you how to take and learn what is low cost to free, and hold you accountable for learning it, you should consider a traditional instructor lead class room setting. Otherwise, I am not aware of any other profession that is practically free for the taking with an internet connection, a <a href="https://frontendmasters.com/join/">couple of dollars a month for screencasting memberships</a>, and a burning desire for knowledge.</p>
-        <p>For example, if you want to get going today, consuming one or more of the following self-directed resources below can work:</p>
+        <p>关于学习的简短建议。<a href="https://youtu.be/QjKH1J77gjI?list=PL055Epbe6d5bQubu5EWf_kUNA3ef_qbmL" target="_blank">在学习抽象之前，先了解实际的基础技术。</a>学习jQuery，先学习DOM。 学习SASS，先学习CSS。 学习JSX，先学习HTML。 学习TypeScript，先学习JavaScript。 学习Handlebars，先学习JavaScript ES6模板。 不要只光顾使用Bootstrap，学习UI模式。</p>
+        <p>最近出现了许多非认证的，昂贵的前端代码学校/训练营。 这些成为前端开发人员的途径通常是教师指导的课程，遵循更传统的学习方式，来自传统课程（即教学大纲，考试，测验，项目，团队项目，成绩等）。</p>
+        <p>如果您正在考虑昂贵的培训计划，请慎重考虑，如今是互联网时代! 任何你想要学习的东西你都可以在网络上花费很少甚至免费找到。但是，如果您需要有人告诉您如何学习和教授学习方法，并让对您的学习负责，您就应该考虑传统的讲师领导课堂。 否则，实际上我不知道有任何其他职业可以通过使用免费的互联网以及对知识的强烈渴望，甚至仅靠开通<a href="https://frontendmasters.com/join/">每月几美元的屏幕录像会员资格</a>来学习职业技能的。</p>
+        <p>例如，如果您想今天开始学习，可以使用以下一个或多个链接跳转资源：</p>
         <ul>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Getting started with the Web</a> [read]
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">开始使用Web</a> [文章]
           </li>
           <li>
-            <a href="https://www.youtube.com/watch?v=Lsg84NtJbmI" target="_blank">So, You Want to be a Front-End Engineer</a> [watch]
+            <a href="https://www.youtube.com/watch?v=Lsg84NtJbmI" target="_blank">你想成为一个前端开发工程师</a> [视频]
           </li>
           <li>
-            <a href="https://frontendmasters.com/learn" target="_blank">Frontend Masters Learning Paths</a> [watch][$]
+            <a href="https://frontendmasters.com/learn" target="_blank">前端大师学习路径</a> [收费视频]
           </li>
           <li>
-            <a href="https://frontendmasters.com/courses/web-development-v2/" target="_blank">Introduction to Web Development</a> [watch][$]
+            <a href="https://frontendmasters.com/courses/web-development-v2/" target="_blank">Web开发简介</a> [收费视频]
           </li>
           <li>
-            <a href="https://teamtreehouse.com/techdegree/front-end-web-development-2" target="_blank">Treehouse Techdegree</a> [watch][$]
+            <a href="https://teamtreehouse.com/techdegree/front-end-web-development-2" target="_blank">树形结构系统学习</a> [收费视频]
           </li>
           <li>
-            <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank">Front-End Web Developer Nanodegree</a> [watch][$]
+            <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank">前端Web开发人员细节深挖</a> [收费视频]
           </li>
           <li>
-            <a href="https://www.lynda.com/learning-paths/Web/become-a-front-end-web-developer" target="_blank">Become a Front-End Web Developer</a> [watch][$]
+            <a href="https://www.lynda.com/learning-paths/Web/become-a-front-end-web-developer" target="_blank">成为前端开发者</a> [收费视频]
           </li>
           <li>
-            <a href="https://learn.freecodecamp.org/" target="_blank">freeCodeCamp</a> [interactive][watch]
+            <a href="https://learn.freecodecamp.org/" target="_blank">freeCodeCamp</a> [互动][视频]
           </li>
         </ul>
-        <p>When getting your start, you should fear most things that conceal complexity. Abstractions (e.g. jQuery) in the wrong hands can give the appearance of advanced skills, while all the time hiding the fact that a developer has an inferior understanding of the basics or underlying concepts.</p>
-        <p>It is assumed that on this journey you are not only learning, but also doing as you learn and investigate tools. Some suggest only doing to learn. While others suggest only learning about doing. I suggest you find a mix of both that matches how your brain works and do that. But, for sure, it is a mix! So, don't just read about it, do it. Learn, do. Learn, do. Repeat indefinitely because things change fast. This is why learning the fundamentals, and not abstractions, are so important.</p>
-        <h3>2.2 - Front-End Job Titles</h3>
+        <p>在刚开始时，您可能会害怕学习过于复杂的语法框架。 事实上换个角度说学习框架 （例如 jQuery） 在一直有助于提高开发技能，有助于您夯实基础和理解底层原理。</p>
+        <p>假设在这个过程中，您不仅要学习代码原理，还要在学习和研究开发工具。有人建议只学习原理，有人建议只学习如何操作开发工具。 我建议您找到两者的组合，以匹配你的大脑深入理解如何工作和做到这一点。这是一个混合的学习过程！ 所以，不要只是简单地读它，做它。 学习，做。 学习，做。 事物无限重复，因为事物变化很快。 这就是为什么学习基础知识，而不是框架是如此重要。</p>
+        <h3>2.2 - 前端职位名称</h3>
         <p><a href="https://css-tricks.com/the-great-divide/">A great divide has been brewing in the front-end developer space for several years between two very different types of so-called front-end developers</a>. On the one side, you have JavaScript-focused programmers who write JavaScript for front-end runtimes that likely have computer science skills with a software development history. They more than likely view HTML and CSS as an abstraction (i.e. <a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a> and <a href="https://hackernoon.com/all-you-need-to-know-about-css-in-js-984a72d48ebc">CSS in JS</a>). On the other side, you have, most likely, non-computer science educated developers who focus on HTML, CSS, and JavaScript as it specifically pertains to the UI. In 2019, when entering or trying to understand the front-end developer space you will absolutely feel this divide. The term front-end developer is on the verge of meaninglessness without clarifying words to address what type of front-end developer is being discussed.</p>
         <p>Below is a list and description of various front-end job titles (Keep in mind titles are <a href="https://blog.prototypr.io/dissecting-front-end-job-titles-7f72a0ef0bc5">hard</a>). The common, or most used (i.e., generic), title for a front-end developer is, "front-end developer" or "front-end engineer". Note that any job that contains the word "front-end", "client-side", "web UI", "HTML", "CSS", or "JavaScript" typically infers that a person has some degree of HTML, CSS, DOM, and JavaScript professional know how.</p>
         <p><strong>Front-End Developer</strong>: The generic job title that describes a developer who is skilled to some degree at HTML, CSS, DOM, and JavaScript and implementing these technologies on the web platform.</p>
