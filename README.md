@@ -19,6 +19,7 @@ The intention is to release an update to the content yearly.
 **Read Online**:
 
 - [https://frontendmasters.com/books/front-end-handbook/2019/](https://frontendmasters.com/books/front-end-handbook/2019/)
+- Download: [PDF](https://github.com/FrontendMasters/front-end-handbook-2019/raw/master/exports/Front-end%20Developer%20Handbook%202019.pdf) | [epub](https://github.com/FrontendMasters/front-end-handbook-2019/raw/master/exports/Front-End%20Developer%20Handbook%202019.epub)
 
 ---
 
