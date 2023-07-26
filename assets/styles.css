@@ -16,17 +16,17 @@ p cite {
   }
 }
 
-#panel a:link {
+#bookPadding a:link {
     background-color: #fdefe8;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     color: #1a1a1a;
 }
 
-#panel a:active {
+#bookPadding a:active {
     outline-width: 0;
 }
 
-#panel a:hover {
+#bookPadding a:hover {
     background-color: #fcdcce;
     border-bottom-color: #1a1a1a;
 }
@@ -209,7 +209,7 @@ hr {
 }
 
 #toc {
-    padding: 50px 20px 20px;
+    padding: 20px 20px;
     font-size: 18px;
 }
 
@@ -362,15 +362,6 @@ tbody tr:nth-child(odd) {
         margin: 0 auto;
     }
 }
-
-/* body {
-    display: flex;
-    flex-direction: column;
-}
-
-.pageContainer {
-    position: relative;
-} */
 
 .FmCta {
     align-items: flex-start;
