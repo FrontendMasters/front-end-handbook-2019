@@ -209,7 +209,7 @@ hr {
 }
 
 #toc {
-    padding: 20px 20px;
+    padding: 50px 20px 20px;
     font-size: 18px;
 }
 
@@ -361,4 +361,66 @@ tbody tr:nth-child(odd) {
         display: block;
         margin: 0 auto;
     }
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+}
+
+.pageContainer {
+    position: relative;
+} */
+
+.FmCta {
+    align-items: flex-start;
+    background: #000;
+    color: #fff;
+    display: flex;
+    gap: 15px;
+    line-height: 2;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.FmCtaLogo svg {
+    fill: #c02d28;
+    vertical-align: middle;
+    width: 25px;
+}
+
+.FmCtaLogo:hover svg {
+    fill: #dd625e;
+}
+
+.FmCtaText {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+}
+
+.FmCtaText a {
+    color: #ccc;
+    font-weight: bold;
+}
+
+.FmCtaText a:hover {
+    color: #fff;
+}
+
+.FmCtaClose {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 25px;
+    height: 30px;
+    line-height: 1;
+    outline: none;
+    padding-bottom: 5px;
+    width: 30px;
+}
+
+.FmCtaClose:hover {
+    color: #fff;
 }
