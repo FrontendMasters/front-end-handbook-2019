@@ -16,17 +16,17 @@ p cite {
   }
 }
 
-#panel a:link {
+#bookPadding a:link {
     background-color: #fdefe8;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     color: #1a1a1a;
 }
 
-#panel a:active {
+#bookPadding a:active {
     outline-width: 0;
 }
 
-#panel a:hover {
+#bookPadding a:hover {
     background-color: #fcdcce;
     border-bottom-color: #1a1a1a;
 }
@@ -361,4 +361,57 @@ tbody tr:nth-child(odd) {
         display: block;
         margin: 0 auto;
     }
+}
+
+.FmCta {
+    align-items: flex-start;
+    background: #000;
+    color: #fff;
+    display: flex;
+    gap: 15px;
+    line-height: 2;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.FmCtaLogo svg {
+    fill: #c02d28;
+    vertical-align: middle;
+    width: 25px;
+}
+
+.FmCtaLogo:hover svg {
+    fill: #dd625e;
+}
+
+.FmCtaText {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+}
+
+.FmCtaText a {
+    color: #ccc;
+    font-weight: bold;
+}
+
+.FmCtaText a:hover {
+    color: #fff;
+}
+
+.FmCtaClose {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 25px;
+    height: 30px;
+    line-height: 1;
+    outline: none;
+    padding-bottom: 5px;
+    width: 30px;
+}
+
+.FmCtaClose:hover {
+    color: #fff;
 }
